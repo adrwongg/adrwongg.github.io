@@ -8,7 +8,7 @@ body {
   align-items: center;
 }
 
-#logo {
+.logo {
   height: 25px !important;
   margin-right: 10px !important;
 }
