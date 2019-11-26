@@ -9,8 +9,8 @@ body {
 }
 
 .logo {
-  height: 25px;
-  margin-right: 10px;
+  height: 25px !important;
+  margin-right: 10px !important;
 }
 
 .logo:hover {
