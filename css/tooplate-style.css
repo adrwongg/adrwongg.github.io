@@ -8,6 +8,15 @@ body {
   align-items: center;
 }
 
+.logo {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.logo:hover {
+  fill: #ffc200;
+}
+
 .about-text {
   padding-right: 5px;
 }
