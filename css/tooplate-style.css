@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+@import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
 body {
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Circular Std Book", sans-serif;
   padding-top: 70px;
 }
 
@@ -28,6 +28,10 @@ body {
   padding: 8px 16px 8px 0;
   border-radius: 50px;
   letter-spacing: 0.2px;
+}
+
+.aboutdesc {
+  padding: 0 50px 1rem 0;
 }
 
 ul {
@@ -499,8 +503,8 @@ b, strong {
     font-size: 2em;
   }
 
-  .animated-item {
-    font-size: 28px;
+  .animated-info {
+    display: none;
   }
 
   .navbar-collapse {
@@ -512,6 +516,26 @@ b, strong {
 
   .navbar-expand-sm .navbar-nav .nav-link {
     padding: 3px 20px;
+  }
+
+  .full-screen {
+    padding: 2rem 30px;
+  }
+
+  .nameIs {
+    display: none;
+  }
+
+  .imma {
+    display: none;
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+
+  .about-image{
+    display: none;
   }
 }
 @media (max-width: 580px) {
