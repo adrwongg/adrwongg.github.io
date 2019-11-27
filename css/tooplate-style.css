@@ -27,7 +27,7 @@ body {
   font-weight: bold;
   padding: 8px 16px 8px 0;
   border-radius: 50px;
-  letter-spacing: 0.2px;
+  letter-spacing: 1px;
 }
 
 .aboutdesc {
@@ -60,7 +60,6 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  letter-spacing: -1px;
 }
 
 h1 {
@@ -519,7 +518,7 @@ b, strong {
   }
 
   .full-screen {
-    padding: 2rem 30px;
+    padding: 3rem 30px;
   }
 
   .nameIs {
@@ -536,6 +535,15 @@ b, strong {
 
   .about-image{
     display: none;
+  }
+
+  .aboutdesc {
+    padding: 0;
+    margin-bottom: 2em;
+  }
+
+  .custom-btn {
+    padding: 20px 30px;
   }
 }
 @media (max-width: 580px) {
