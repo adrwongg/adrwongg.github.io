@@ -87,7 +87,6 @@ b, strong {
   background: #eee;
   color: #5b5b5b;
   font-weight: bold;
-  border-radius: 50px;
   padding: 13px 29px;
   font-size: 14px;
   line-height: normal;
@@ -434,7 +433,7 @@ b, strong {
 }
 .contact-form .submit-btn {
   background: #ffc200;
-  border-radius: 50px;
+  border-radius: 0.25rem;
   color: #ffffff;
   font-weight: bold;
   border: 0;
@@ -449,8 +448,12 @@ b, strong {
   background: #474559;
   border-radius: 0 0 3px 3px;
   position: relative;
-  bottom: 8px;
 }
+
+.contact-info-item {
+  margin-top: 0.75em;
+}
+
 .contact-info p, .contact-info a {
   color: #f7f3f3;
 }
@@ -539,7 +542,7 @@ b, strong {
 
   .aboutdesc {
     padding: 0;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
 
   .custom-btn {
