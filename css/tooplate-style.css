@@ -4,13 +4,10 @@ body {
   padding-top: 70px;
 }
 
-* {
-  align-items: center;
-}
-
 .logo {
   height: 25px !important;
   margin-right: 10px !important;
+  margin-bottom: 3.5px;
 }
 
 .about-text {
@@ -136,6 +133,10 @@ b, strong {
 }
 .animated-item:nth-child(3n+3) {
   animation-delay: 8s;
+}
+
+#message {
+  height: 15rem;
 }
 
 @keyframes BottomTotop {
@@ -462,7 +463,7 @@ b, strong {
   color: #f7f3f3;
   font-size: 20px;
   display: block;
-  margin: 5px 0;
+  margin-top: 0.75em;
 }
 .social-links .uil:hover {
   color: #ffc200;
@@ -481,10 +482,6 @@ b, strong {
 
   .color-mode {
     display: none;
-  }
-
-  .about-image {
-    margin-top: 4em;
   }
 
   .mobile-mt-2,
