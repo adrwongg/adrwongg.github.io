@@ -411,6 +411,10 @@ b, strong {
   background: #5b5b5b;
 }
 
+.google-map {
+  height: 300px;
+}
+
 .google-map iframe {
   width: 100%;
 }
