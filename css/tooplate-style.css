@@ -427,7 +427,6 @@ b, strong {
   border-radius: 2px;
   outline: none;
   box-shadow: none;
-  font-weight: bold;
   margin: 16px 0;
 }
 .contact-form .form-control:not(textarea) {
