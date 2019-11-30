@@ -508,11 +508,15 @@ b, strong {
     display: none;
   }
 
+  .navbar {
+    padding: .5rem 1rem;
+  }
+
   .navbar-collapse {
     background: #ffffff;
     text-align: center;
     flex-grow: 0;
-    padding-bottom: 20px;
+    padding: 20px 0;
   }
 
   .navbar-expand-sm .navbar-nav .nav-link {
