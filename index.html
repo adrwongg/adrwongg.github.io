@@ -24,7 +24,11 @@
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
-            <a class="navbar-brand justify-content-center align-items-center" href="index.html"><img src="images/logo.svg" class="logo" alt="logo">Adrian Wong</a>
+            <!-- ICON ONLY WHEN MOBILE (class background and size), NAME ONLY WHEN DESKTOP -->
+            <a class="navbar-brand justify-content-center align-items-center" href="index.html">
+              <img src="./images/logo.svg" class="img-fluid logo" alt="svg image">
+              <div class="navName">Adrian Wong</div>
+            </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -62,6 +66,7 @@
                         <small class="small-text">Welcome to <span class="mobile-block">my portfolio!</span></small>
                         <h1 class="animated animated-text">
                             <span class="nameIs">My name is </span>
+                            <!-- font is Tiempos Fine when mobile -->
                             <span class="name">Adrian Wong</span>
                             <span class="imma"><br>I'm a</span>
                                 <div class="animated-info">
@@ -89,6 +94,8 @@
             </div>
         </div>
     </section>
+
+    <!-- ABOUT (include UX methods from https://www.primsimp.com/) --> 
 
     <!-- PROJECTS -->
     <section class="project py-5" id="project">
@@ -138,7 +145,7 @@
         </div>
     </section>
 
-    <!-- FEATURES -->
+    <!-- TWO COLUMN STATS (see spencercamp.com) -->
 
     <!-- CONTACT -->
     <section class="contact py-5" id="contact">
