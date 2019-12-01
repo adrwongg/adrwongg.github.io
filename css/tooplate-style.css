@@ -479,6 +479,10 @@ b, strong {
   color: #ffc200;
 }
 
+.footer {
+  padding: 3rem 0;
+}
+
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
     position: relative;
@@ -579,6 +583,14 @@ b, strong {
 
   .contact-form .form-control {
     margin: 10px 0;
+  }
+
+  .footer {
+    padding: 1.5rem 0;
+  }
+
+  #message {
+    height: 10rem;
   }
 }
 @media (max-width: 580px) {
