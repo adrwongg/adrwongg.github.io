@@ -4,6 +4,10 @@ body {
   padding-top: 70px;
 }
 
+.break {
+  display: none;
+}
+
 .logo {
   height: 25px !important;
   display: none;
@@ -569,7 +573,13 @@ b, strong {
     color: #000000;
   }
 
+  .break {
+    display: inline;
+  }
 
+  .contact-form .form-control {
+    margin: 10px 0;
+  }
 }
 @media (max-width: 580px) {
 	.animated-info {
