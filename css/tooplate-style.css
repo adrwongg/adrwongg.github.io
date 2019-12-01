@@ -44,7 +44,7 @@ a {
   transition: all 0.4s ease;
 }
 a:hover {
-  color: #ffc200 !important;
+  cursor: pointer;
 }
 
 p {
@@ -90,15 +90,15 @@ b, strong {
   transition: all 0.4s ease;
 }
 .custom-btn:hover {
-  color: #ffc200;
+  color: #000000;
 }
 .custom-btn.custom-btn-bg {
-  background: #474559;
-  color: #ffffff;
+  background: #5b5b5b;
+  color: #eee;
 }
 .custom-btn.custom-btn-bg:hover {
-  background: #ffc200;
-  color: #ffffff !important;
+  background: #444444;
+  color: #ffffff;
 }
 
 .animated {
@@ -213,7 +213,7 @@ b, strong {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffc200;
+  color: #000000;
   font-weight: bold;
 }
 .navbar-light .navbar-nav .nav-link:focus span,
@@ -437,14 +437,14 @@ b, strong {
 .contact-form .submit-btn {
   background: #ffc200;
   border-radius: 0.25rem;
-  color: #ffffff;
+  color: #5b5b5b;
   font-weight: bold;
   border: 0;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 .contact-form .submit-btn:hover {
-  background: #474559;
+  color: #000000;
 }
 
 .contact-info {
@@ -457,8 +457,12 @@ b, strong {
   margin-top: 0.75em;
 }
 
-.contact-info p, .contact-info a {
+.contact-info p {
   color: #f7f3f3;
+}
+
+.contact-info a {
+  color: #ffc200;
 }
 
 .social-links .uil {
@@ -557,9 +561,15 @@ b, strong {
     margin-bottom: 1em;
   }
 
-  .custom-btn {
-    padding: 20px 30px;
+  .custom-btn.custom-btn-bg {
+    background: #ffc200;
+    color: #5b5b5b;
   }
+  .custom-btn.custom-btn-bg:hover {
+    color: #000000;
+  }
+
+
 }
 @media (max-width: 580px) {
 	.animated-info {
