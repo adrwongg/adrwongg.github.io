@@ -4,6 +4,10 @@ body {
   padding-top: 70px;
 }
 
+.row {
+  margin: 0 !important;
+}
+
 .line {
   border-bottom: solid 2px #ffc200;
   width: 100px;
@@ -40,7 +44,7 @@ body {
 }
 
 .herodesc {
-  padding: 0 70px 1rem 0;
+  padding: 0 50px 1rem 0;
 }
 
 ul {
@@ -105,6 +109,7 @@ b, strong {
 }
 .custom-btn:hover {
   color: #000000;
+  cursor: pointer;
 }
 .custom-btn.custom-btn-bg {
   background: #5b5b5b;
@@ -113,6 +118,7 @@ b, strong {
 .custom-btn.custom-btn-bg:hover {
   background: #444444;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .animated {
@@ -180,7 +186,7 @@ b, strong {
   z-index: 999999;
   will-change: transform;
   transition: transform 200ms linear;
-  padding: 15px 2.5rem 15px 2rem;
+  padding: 15px 2.5rem 15px 2.5rem;
 }
 .navbar[class*="-unpinned"] {
   transform: translate(0, -150%);
@@ -197,6 +203,7 @@ b, strong {
 
 .navbar-brand {
   font-weight: bold;
+  margin-left: 15px;
 }
 
 .navbar-expand-sm .navbar-nav .nav-link {
@@ -224,6 +231,7 @@ b, strong {
 .navbar-light .navbar-nav .nav-link:hover {
   color: #000000;
   font-weight: bold;
+  cursor: pointer;
 }
 .navbar-light .navbar-nav .nav-link:focus span,
 .navbar-light .navbar-nav .nav-link:hover span {
@@ -355,6 +363,7 @@ b, strong {
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
   color: #ffc200;
+  cursor: pointer;
 }
 .owl-theme .owl-dots .owl-dot {
   outline: none;
@@ -365,6 +374,7 @@ b, strong {
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #5b5b5b;
+  cursor: pointer;
 }
 
 .google-map {
@@ -402,6 +412,7 @@ b, strong {
 }
 .contact-form .submit-btn:hover {
   color: #000000;
+  cursor: pointer;
 }
 
 .contact-info {
@@ -438,7 +449,7 @@ b, strong {
 }
 @media (max-width: 991px) {
   .full-screen {
-    padding-bottom: 4rem;
+    padding-bottom: 30px;
   }
 
   .color-mode {
@@ -478,7 +489,7 @@ b, strong {
   }
 
   .full-screen {
-    padding: 1rem 30px;
+    padding-top: 30px;
   }
 
   .logo {
@@ -490,7 +501,7 @@ b, strong {
   }
 
   .name {
-    font-size: 4rem;
+    font-size: 5rem;
     font-family: "Playfair Display", sans-serif;
   }
 
@@ -505,6 +516,7 @@ b, strong {
   }
   .custom-btn.custom-btn-bg:hover {
     color: #000000;
+    cursor: pointer;
   }
 
   .break {
@@ -525,6 +537,7 @@ b, strong {
 
   .custom-btn.custom-btn-bg:hover {
     color: #000000;
+    cursor: pointer;
   }
 }
 @media (max-width: 580px) {
