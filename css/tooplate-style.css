@@ -4,25 +4,34 @@ body {
   padding-top: 70px;
 }
 
+.line {
+  border-bottom: solid 2px #ffc200;
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .break {
   display: none;
 }
 
 .logo {
   height: 25px !important;
+  margin-left: 13px;
   display: none;
 }
 
-.about-text {
+.hero-text {
   padding-right: 5px;
 }
 
 .full-screen {
-  padding: 8rem 0;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .small-text {
-  color: #5b5b5b;
+  color: #858585;
   font-size: 14px;
   font-weight: bold;
   padding: 8px 16px 8px 0;
@@ -30,8 +39,8 @@ body {
   letter-spacing: 1px;
 }
 
-.aboutdesc {
-  padding: 0 10px 1rem 0;
+.herodesc {
+  padding: 0 70px 1rem 0;
 }
 
 ul {
@@ -43,12 +52,13 @@ ul li {
 }
 
 a {
-  font-weight: normal;
   text-decoration: none !important;
   transition: all 0.4s ease;
+  color: #f6a200;
 }
 a:hover {
   cursor: pointer;
+  color: #f6a200;
 }
 
 p {
@@ -137,10 +147,6 @@ b, strong {
   animation-delay: 8s;
 }
 
-#message {
-  height: 15rem;
-}
-
 @keyframes BottomTotop {
   0% {
     opacity: 0;
@@ -174,7 +180,7 @@ b, strong {
   z-index: 999999;
   will-change: transform;
   transition: transform 200ms linear;
-  padding: 15px 2.5rem 0 2rem;
+  padding: 15px 2.5rem 15px 2rem;
 }
 .navbar[class*="-unpinned"] {
   transform: translate(0, -150%);
@@ -184,9 +190,9 @@ b, strong {
 }
 .navbar[class*="headroom--not-top"] {
   background: #ffffff;
-  border-bottom: 1px solid #f0f0f0;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
@@ -236,7 +242,7 @@ b, strong {
   line-height: 32px;
   outline: none;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 13px;
 }
 .navbar-toggler:focus {
   outline: none;
@@ -266,58 +272,6 @@ b, strong {
   font-size: 14px;
   font-weight: normal;
   display: block;
-}
-
-.color-mode {
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.color-mode-icon {
-  position: relative;
-  right: 6px;
-}
-.color-mode-icon:after {
-  font-family: 'unicons';
-  content: '\ea9f';
-  font-size: 30px;
-  font-weight: 300;
-  font-style: normal;
-}
-.color-mode-icon.active:after {
-  font-family: 'unicons';
-  content: '\eb65';
-  font-size: 30px;
-  color: #ffffff;
-}
-
-.dark-mode {
-  background: #0c0c0d;
-}
-.dark-mode .navbar-light .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.8);
-}
-.dark-mode .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffc200;
-}
-.dark-mode .navbar[class*="headroom--not-top"] {
-  background: #0c0c0d;
-  border-bottom: 1px solid #1f1f1f;
-}
-.dark-mode .small-text {
-  background: #0d0c15;
-  color: #ffffff;
-}
-.dark-mode .feature-card .uil,
-.dark-mode .navbar-light .navbar-brand,
-.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
-.dark-mode .color-mode {
-  color: #ffffff;
-}
-.dark-mode .owl-carousel .owl-nav button.owl-next,
-.dark-mode .owl-carousel .owl-nav button.owl-prev,
-.dark-mode .owl-carousel button.owl-dot {
-  color: #ffffff;
 }
 
 .timeline-wrapper {
@@ -468,18 +422,12 @@ b, strong {
   color: #ffc200;
 }
 
-.social-links .uil {
-  color: #f7f3f3;
-  font-size: 20px;
-  display: block;
-  margin-top: 0.75em;
-}
-.social-links .uil:hover {
-  color: #ffc200;
+.social {
+  height: 25px !important; 
 }
 
 .footer {
-  padding: 3rem 0;
+  padding: 0 0 3rem 0;
 }
 
 @media (min-width: 1270px) {
@@ -495,11 +443,6 @@ b, strong {
 
   .color-mode {
     display: none;
-  }
-
-  .mobile-mt-2,
-  .contact-form {
-    margin-top: 2em;
   }
 
   .contact-info {
@@ -542,16 +485,8 @@ b, strong {
     display: inline;
   }
 
-  .navName {
-    display: none;
-  }
-
-  .nameIs {
-    display: none;
-  }
-
-  .imma {
-    display: none;
+  .hide {
+    display: none !important;
   }
 
   .name {
@@ -559,11 +494,7 @@ b, strong {
     font-family: "Playfair Display", sans-serif;
   }
 
-  .about-image{
-    display: none;
-  }
-
-  .aboutdesc {
+  .herodesc {
     padding: 0;
     margin-bottom: 1em;
   }
@@ -627,7 +558,7 @@ b, strong {
     margin-top: 0;
   }
 
-  .about-text {
+  .hero-text {
     text-align: center;
   }
 
