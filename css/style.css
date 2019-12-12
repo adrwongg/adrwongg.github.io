@@ -6,7 +6,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  padding-top: 70px;
+  padding-top: 80px;
   background-color: #FAFAFA;
 }
 
@@ -89,10 +89,6 @@ body {
 .logo {
   height: 25px !important;
   display: none;
-}
-
-.hero-text {
-  padding-right: 5px;
 }
 
 .full-screen {
@@ -252,7 +248,7 @@ b, strong {
   z-index: 999999;
   will-change: transform;
   transition: transform 200ms linear;
-  padding: 15px 2.5rem 15px 2.5rem;
+  padding: 20px 2.5rem 20px 2.5rem;
 }
 .navbar[class*="-unpinned"] {
   transform: translate(0, -150%);
@@ -269,7 +265,6 @@ b, strong {
 
 .navbar-brand {
   font-weight: bold;
-  margin-left: 15px;
 }
 
 .navbar-expand-sm .navbar-nav .nav-link {
@@ -421,7 +416,13 @@ b, strong {
     padding: 0 2rem;
   }
 }
+
+/*----------------------- Mobile --------------------------*/
 @media (max-width: 767px) {
+  body {
+    padding-top: 50px;
+  }
+
   h1 {
     font-size: 2.4em;
   }
@@ -430,9 +431,17 @@ b, strong {
     font-size: 2em;
   }
 
-  #contact .container {
-    padding-left: 0;
-    padding-right: 0;
+  .navbar-brand {
+    font-weight: bold;
+    margin-left: 15px;
+  }
+
+  .hero {
+    padding-top: 3rem !important;
+  }
+
+  .hero-text {
+    padding: 0 15px 0 15px;
   }
 
   .animated-info {
