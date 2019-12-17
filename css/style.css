@@ -63,6 +63,10 @@ iframe {
   margin-top: 1.5rem;
 }
 
+.case-section-intro {
+  text-align: center;
+}
+
 .quote {
   line-height: 1.2rem;
   color: #5b5b5b;
@@ -204,6 +208,10 @@ ol, ul, p {
   font-weight: 300;
   line-height: 1.5;
   color: #5b5b5b;
+}
+
+.small {
+  font-size: 18px;
 }
 
 ol li {
@@ -565,7 +573,6 @@ h6 {
 }
 
 .case-reflection {
-  padding-bottom: 4rem;
 }
 
 .case-quote {
@@ -719,6 +726,11 @@ h6 {
     margin-top: 3rem;
   }
 
+  .case .user-quote {
+    margin: 2rem 0;
+    padding: 1.5rem 3rem;
+  }
+
   .case-title {
     padding: 0 15px;
   }
@@ -750,12 +762,16 @@ h6 {
   }
 
   .case-section-title {
-    padding: 0 30px;
+    padding: 0 15px;
   }
 
   .case-section-desc {
-    padding: 0 30px;
+    padding: 0 15px;
     margin-bottom: 1rem;
+  }
+
+  .case-section-intro {
+    text-align: left;
   }
 
   .case-section-content {
@@ -767,7 +783,7 @@ h6 {
   }
 
   .case-reflection {
-    padding: 0 15px 4rem 15px;
+    padding: 0 15px 2rem 15px;
   }
 
   .footer {
