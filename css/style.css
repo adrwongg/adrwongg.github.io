@@ -10,18 +10,31 @@ body {
   background-color: #FAFAFA;
 }
 
+iframe {
+  overflow: hidden;
+}
+
 #top {
   position: absolute;
   top: 0;
 }
 
+.peripheral-text {
+  color: #ACACAC;
+}
+
+.zoomer {
+  cursor: zoom-in;
+}
+
 .user-quote {
+  color: black;
   padding: 30px;
-  color: #000;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   line-height: 1.7;
   font-style: italic; 
-  margin-top: 30px
+  border-left: 3px solid #F6C444;
+  margin-top: 2rem;
 }
 .user-quote .vcard figure {
   -webkit-box-flex: 0;
@@ -41,9 +54,18 @@ body {
   font-size: 80%;
 }
 
+.case .user-quote {
+  margin: 3rem 5rem 3rem 3rem;
+  padding: 1.5rem 3rem;
+}
+
+.case .user-quote .vcard {
+  margin-top: 1.5rem;
+}
+
 .quote {
-  color: grey;
   line-height: 1.2rem;
+  color: #5b5b5b;
 }
 
 .test {
@@ -68,6 +90,18 @@ body {
 .test:hover {
   background-position: -100% 0;
   text-decoration: none;
+}
+
+.hidden-answer {
+  color: #E0E0E0;
+  background-color: #E0E0E0;
+  transition: color 0.75s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.hidden-answer:hover {
+  color: #ACACAC;
+  background-color: #FAFAFA;
 }
 
 .project-card {
@@ -131,8 +165,8 @@ body {
 }
 
 .full-screen {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .small-text {
@@ -150,6 +184,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 ul li {
   list-style: none;
 }
@@ -164,11 +199,15 @@ a:hover {
   color: #f6a200;
 }
 
-p {
+ol, ul, p {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.5;
   color: #5b5b5b;
+}
+
+ol li {
+  margin-bottom: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -194,6 +233,11 @@ h3 {
 h3,
 b, strong {
   font-weight: bold;
+  color: black;
+}
+
+h6 {
+  line-height: 1.5rem;
 }
 
 .custom-btn {
@@ -436,6 +480,103 @@ b, strong {
   color: #ffc200;
 }
 
+.case-title {
+  padding: 5rem 15rem 0 15rem;
+}
+
+.case-hero {
+  margin: 3rem 0;
+}
+
+.case-intro-img {
+  padding: 0 15rem;
+  margin-bottom: 15px;
+}
+
+.case-meta-row {
+  margin-top: 1.8rem;
+}
+
+.case-meta-column {
+  margin: 0 1rem;
+}
+
+.case-meta-title {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.case-section {
+  margin-bottom: 10rem;
+}
+
+.case-section-title {
+  margin-bottom: 2rem;
+}
+
+.case-reflection-title {
+  margin-bottom: 2rem;
+}
+
+.case-section-desc {
+  padding: 0 4rem;
+  margin-bottom: 3rem;
+}
+
+.case-section-side {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10rem; 
+  margin: 0.5rem 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.0);
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.vline {
+  border-right: 1px dotted #F6C444;
+}
+
+.case-section-content {
+  padding-left: 3rem;
+}
+
+.case-section-content ul,ol{
+  padding-left: 2rem;
+}
+
+.case-section-content ol li{
+  padding-left: 2rem;
+}
+
+.case-section-content ul li::before {
+  content: "\2022";
+  color: grey;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em
+}
+
+.case-img {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.case-reflection {
+  padding-bottom: 4rem;
+}
+
+.case-quote {
+  background-color: #FFFAED;
+  border-left: 3px solid #F6C444;
+  padding: 2rem 2rem;
+  line-height: 1.75rem;
+  font-size: 1rem;
+  font-style: italic;
+}
+
 .social {
   height: 20px !important; 
 }
@@ -572,6 +713,61 @@ b, strong {
 
   .message {
     height: 9rem !important;
+  }
+
+  .case {
+    margin-top: 3rem;
+  }
+
+  .case-title {
+    padding: 0 15px;
+  }
+
+  .case-hero {
+    padding: 0 15px;
+    margin: 30px 0;
+  }
+
+  .case-brief {
+    padding: 0 30px;
+  }
+
+  .case-meta {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .case-meta-column {
+    margin-bottom: 1rem;
+  }
+
+  .case-meta-row {
+    margin-top: 0;
+  }
+
+  .case-section {
+    margin-bottom: 4rem;
+  }
+
+  .case-section-title {
+    padding: 0 30px;
+  }
+
+  .case-section-desc {
+    padding: 0 30px;
+    margin-bottom: 1rem;
+  }
+
+  .case-section-content {
+    padding: 0 30px;
+  }
+
+  .case-section-content ol li {
+    padding-left: 1rem;
+  }
+
+  .case-reflection {
+    padding: 0 15px 4rem 15px;
   }
 
   .footer {
