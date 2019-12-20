@@ -96,6 +96,10 @@ iframe {
   text-decoration: none;
 }
 
+.highlight {
+  background-color: #ffc904;
+}
+
 .hidden-answer {
   color: #E0E0E0;
   background-color: #E0E0E0;
@@ -143,6 +147,7 @@ iframe {
 
 .project-card-text {
   margin-top: 2rem;
+  padding-left: 2rem;
 }
 
 .line {
