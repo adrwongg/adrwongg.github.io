@@ -4,7 +4,7 @@
     <meta name="referrer" content="origin">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="About Adrian">
+    <meta name="description" content="Financial Disclosure">
     <meta name="author" content="Adrian Wong">
     <meta name="robots" content="noindex, nofollow" />
 
@@ -18,6 +18,8 @@
     <link rel="icon" type="image/png" href="./images/logo.png">
   </head>
   <body>
+
+    <a id="top"></a>
 
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
@@ -37,10 +39,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                        <a href="./index.html" class="nav-link active"><span data-hover="Projects">Projects</span></a>
                         <ul class="mobile">
                           <li class="nav-item-small">
-                            <a href="./index.html" class="nav-link-small"><span data-hover="Project1">Financial Disclosure</span></a>
+                            <a href="./index.html" class="nav-link-small active"><span data-hover="Project1">Financial Disclosure</span></a>
                             <br>
                             <small class="text-muted nav-link-desc">Disclosure done correctly. The first time.</small>
                           </li>
@@ -58,7 +60,7 @@
                         <div class="grayline mx-auto mobile"></div>
                     </li>
                     <li class="nav-item">
-                        <a href="./about.html" class="nav-link active"><span data-hover="About">About</span></a>
+                        <a href="./about.html" class="nav-link"><span data-hover="About">About</span></a>
                     </li>
                     <li class="nav-item">
                         <a href="./contact.html" class="nav-link"><span data-hover="Contact">Contact</span></a>
@@ -68,34 +70,46 @@
         </div>
     </nav>
 
-    <!-- ABOUT -->
-    <section class="about container full-screen d-lg-flex justify-content-center align-items-center" id="about">
-      <div class="row">
-
-          <div class="col-lg-5 col-md-12 col-12">
-              <div class="png headshot">
-                  <img src="images/headshot.png" class="img-fluid" alt="png image">
-              </div>
-          </div>
-          <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
-              <div class="about-text">
-                  <h3 class="animated animated-text">
-                      <span class="nameIs">My name is </span><br class='break'>
-                      <span class="name">Adrian Wong</span>
-                      <div class="line"></div>
-                  </h3>
-
-                  <p class="aboutdesc">I am a Master's candidate at the University of Toronto, studying User Experience and Human-Centered Data Science. With my multidisciplinary background in Psychology, Digital Media, and Computer Science, I've developed a genuine passion for designing delightful user experiences.</p>
-
-                  <p class="aboutdesc">Currently, I work as a Research Assistant at KMDI-Semaphore Labs, located within the University of Toronto. In particular, we are examining the integration of AI and reality-enhancing technologies (including VR, AR, MR, and XR) in the lives of youth.</p>
-
-                  <p class="aboutdesc">In my free time, I enjoy trying new foods, hiking, watching movies, and playing video games with my friends.</p>
-                  
-              </div>
-          </div>
-
+    <!-- CASE -->
+    <section class="case container justify-content-center align-items-center" id="about">
+      <div class="text-center case-title full-screen">
+          <h1 class="display-4"><strong>Financial Disclosure</strong></h1>
+          <p class="text-muted case-desc">A team management and scheduling tool that makes coordinating meetings for school projects instantaneous.</p>
+          <div class="py-2 hide"></div>
+          <div class="line mx-auto"></div>
       </div>
-    </section>
+
+      <img src="./images/fd/handshake-hero.jpg" class="img-fluid case-hero" alt="fd hero image">
+
+      <div class="row case-section justify-content-between">
+        <div class="col-sm-5 col-md-5 col-lg-5 case-brief">
+          <h1 class="">Project Brief</h1>
+          <p class="">Undergraduate students typically complete group projects and need to decide meeting times based on everyone's course schedules. <br>By connecting with existing university infrastructures, Avail effectively provides optimal time-slot suggestions for productive meetings.</p>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 case-meta">
+          <div class="row case-meta-row justify-content-end">
+            <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
+              <p class="case-meta-title">Project Duration</p>
+              <h6 class="text-muted">14 weeks <br>(May - Aug 2019)</h6>
+            </div>
+            <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
+              <p class="case-meta-title">Team Size</p>
+              <h6 class="text-muted">Design team of 2<br> (including me)</h6>
+            </div>
+          </div>
+          <a id="beginning"></a>
+          <div class="row case-meta-row justify-content-end">
+            <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
+              <p class="case-meta-title">My Responsibilities</p>
+              <h6 class="text-muted">User Research, Empathy Mapping, Prototyping, Usability Evaluation</h6>
+            </div>
+            <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
+              <p class="case-meta-title">Tools Used</p>
+              <h6 class="text-muted">Google Forms, <br>Adobe Photoshop, <br>Sketch, and Figma</h6>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- FOOTER -->
      <footer class="footer">
@@ -114,5 +128,6 @@
     <script src="js/Headroom.js"></script>
     <script src="js/jQuery.headroom.js"></script>
     <script src="js/custom.js"></script>
+
   </body>
 </html>
