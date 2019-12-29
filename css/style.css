@@ -557,8 +557,9 @@ h6 {
   top: 15rem; 
   width: 13.1rem;
   margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
   transform: rotate(270deg);
-  border-bottom: 1px solid royalblue;
+  border-bottom: 2px solid rgba(65, 105, 225, 0.2);
   text-align: center;
   padding-left: 10px;
 }
@@ -566,7 +567,8 @@ h6 {
 .case-side-text {
   letter-spacing: 4px;
   padding-bottom: 2rem;
-  color: royalblue;
+  color: rgba(65, 105, 225, 0.5);
+  text-transform: uppercase;
 }
 
 .vline {
