@@ -27,12 +27,12 @@ iframe {
   display: none !important;
 }
 
-.peripheral-text {
-  color: #ACACAC;
-}
-
 .zoomer {
   cursor: zoom-in;
+}
+
+.hero {
+  height: 80vh;
 }
 
 .user-quote {
@@ -41,7 +41,7 @@ iframe {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   line-height: 1.7;
   font-style: italic; 
-  border-left: 3px solid #F6C444;
+  border-left: 3px solid rgba(65, 105, 225, 0.5);
   margin-top: 2rem;
 }
 .user-quote .vcard figure {
@@ -80,6 +80,10 @@ iframe {
   color: #5b5b5b;
 }
 
+.text-muted {
+  color: #8D8D8D !important;
+}
+
 .test {
   color: #000;
   text-decoration: none;
@@ -90,10 +94,10 @@ iframe {
   -moz-background-size: 200% auto;
 
   background-position: -0% 0;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(255, 201, 4,0)), color-stop(50%, #ffc904));
-  background-image: -webkit-linear-gradient(left, rgba(255, 201, 4,0) 50%, #ffc904 50%);
-  background-image: -o-linear-gradient(left, rgba(255, 201, 4,0) 50%, #ffc904 50%);
-  background-image: linear-gradient(to right, rgba(255, 201, 4,0) 50%, #ffc904 50%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(255, 201, 4,0)), color-stop(50%, royalblue));
+  background-image: -webkit-linear-gradient(left, rgba(255, 201, 4,0) 50%, royalblue 50%);
+  background-image: -o-linear-gradient(left, rgba(255, 201, 4,0) 50%, royalblue 50%);
+  background-image: linear-gradient(to right, rgba(255, 201, 4,0) 50%, royalblue 50%);
   -o-transition: background-position 0.5s ease-out;
   transition: background-position 0.5s ease-out;
   -webkit-transition: background-position 0.5s ease-out;
@@ -159,7 +163,7 @@ iframe {
 }
 
 .line {
-  border-bottom: solid 2px #ffc200;
+  border-bottom: solid 2px royalblue;
   width: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -191,7 +195,11 @@ iframe {
 }
 
 .herodesc {
-  padding: 0 70px 1rem 0;
+  padding: 0 0 1rem 0;
+}
+
+.outlined-img {
+  outline: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 ul {
@@ -206,11 +214,11 @@ ul li {
 a {
   text-decoration: none !important;
   transition: all 0.4s ease;
-  color: #f6a200;
+  color: royalblue;
 }
 a:hover {
   cursor: pointer;
-  color: #f6a200;
+  color: royalblue;
 }
 
 ol, ul, p {
@@ -228,7 +236,7 @@ ol li {
   margin-bottom: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-weight: bold;
 }
 
@@ -284,17 +292,18 @@ h6 {
 
 .animated {
   position: relative;
+  font-weight: bold;
 }
 
 .animated-info {
   display: inline-block;
   vertical-align: top;
-  min-width: 450px;
+  min-width: 800px;
   position: relative;
 }
 
 .animated-item {
-  color: #ffc200;
+  color: royalblue;
 }
 
 .animated-item {
@@ -464,12 +473,12 @@ h6 {
   height: 48px;
 }
 .contact-form .form-control:hover, .contact-form .form-control:focus {
-  border-color: #ffc200;
+  border-color: royalblue;
 }
 .contact-form .submit-btn {
-  background: #ffc200;
+  background: royalblue;
   border-radius: 0.25rem;
-  color: #5b5b5b;
+  color: white;
   font-weight: bold;
   border: 0;
   cursor: pointer;
@@ -495,7 +504,7 @@ h6 {
 }
 
 .contact-info a {
-  color: #ffc200;
+  color: #9FCDFF;
 }
 
 .case-title {
@@ -545,15 +554,25 @@ h6 {
 .case-section-side {
   position: -webkit-sticky;
   position: sticky;
-  top: 10rem; 
-  margin: 0.5rem 0;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.0);
-  text-align: right;
-  padding-right: 2rem;
+  top: 15rem; 
+  width: 13.1rem;
+  margin-top: 4.5rem;
+  transform: rotate(270deg);
+  border-bottom: 1px solid royalblue;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.case-side-text {
+  letter-spacing: 4px;
+  padding-bottom: 2rem;
+  color: royalblue;
 }
 
 .vline {
-  border-right: 1px dotted #F6C444;
+  border-left: 1px solid #e0e0e0;
+  margin-left: 3.5rem;
+  padding-right: 2rem;
 }
 
 .grayline {
@@ -593,8 +612,7 @@ h6 {
 }
 
 .case-quote {
-  background-color: #FFFAED;
-  border-left: 3px solid #F6C444;
+  background-color: rgba(25, 105, 225, 0.1);
   padding: 2rem 2rem;
   line-height: 1.75rem;
   font-size: 1rem;
@@ -626,7 +644,7 @@ h6 {
   }
 
   h1 {
-    font-size: 2.4em;
+    font-size: 2.4em !important;
   }
 
   h2 {
@@ -644,6 +662,7 @@ h6 {
 
   .hero {
     padding-top: 3rem !important;
+    height: auto;
   }
 
   .hero-text {
@@ -837,6 +856,11 @@ h6 {
   }
 }
 @media (max-width: 580px) {
+
+  .hide {
+    display: none !important;
+  }
+
 	.animated-info {
 		min-width: 200px;
 	}
