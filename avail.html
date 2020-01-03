@@ -11,6 +11,7 @@
     <title>Adrian Wong</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/style.css">
@@ -74,7 +75,7 @@
     <section class="case container justify-content-center align-items-center" id="about">
       <div class="text-center case-title full-screen">
           <h1 class="display-3"><strong>Avail</strong></h1>
-          <p class="text-muted case-desc">A team management and scheduling tool that makes coordinating meetings for school projects instantaneous.</p>
+          <p class="case-desc">A team management and scheduling tool that makes coordinating meetings for school projects instantaneous.</p>
           <div class="py-2 hide"></div>
           <div class="line mx-auto"></div>
       </div>
@@ -90,22 +91,22 @@
           <div class="row case-meta-row justify-content-end">
             <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
               <p class="case-meta-title">Project Duration</p>
-              <h6 class="text-muted">9 weeks <br>(Oct - Nov 2019)</h6>
+              <p>9 weeks <br>(Oct - Nov 2019)</p>
             </div>
             <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
               <p class="case-meta-title">Team Size</p>
-              <h6 class="text-muted">Design team of 4<br> (including me)</h6>
+              <p>Design team of 4<br> (including me)</p>
             </div>
           </div>
           <a id="beginning"></a>
           <div class="row case-meta-row justify-content-end">
             <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
               <p class="case-meta-title">My Responsibilities</p>
-              <h6 class="text-muted">User Research, Empathy Mapping, Prototyping, Usability Evaluation</h6>
+              <p>User Research, User Analysis, Prototyping, Usability Assessment</p>
             </div>
             <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
               <p class="case-meta-title">Tools Used</p>
-              <h6 class="text-muted">Google Forms, <br>Adobe Photoshop, <br>Sketch, and Figma</h6>
+              <p>Google Forms, <br>Adobe Photoshop, <br>Sketch, and Figma</p>
             </div>
           </div>
         </div>
@@ -126,7 +127,7 @@
         <div class="row">
           <div class="col-sm-1 col-md-1 col-lg-1">
             <div class="case-section-side hide">
-              <h6 class="case-side-text">Background</h6>
+              <h6 class="case-side-text">Discovery</h6>
             </div>
           </div>
           <div class="vline"></div>
@@ -150,12 +151,16 @@
             <p class="">We conducted face-to-face interviews (n=10) and an online survey (n=42) to collect both qualitative and quantitative data to gather a comprehensive understanding of the problem space.</p>
             <p class="">Our initial survey findings suggested that participants rated meeting scheduling to be the most difficult aspect of group work.</p>
 
-            <img src="./images/avail/barchart.jpg" class="img-fluid" alt="bar chart image">
+            <a href="./images/avail/barchart.jpg" data-toggle="lightbox">
+              <img src="./images/avail/barchart.jpg" class="img-fluid zoomer" alt="bar chart image">
+            </a>
 
             <p class="">Probing into this problem space further, we found that about <strong>64.3%</strong> of people indicated that they would take 30 minutes or more to schedule a meeting.</p>
             <p class="">This is quite significant given that  around <strong>87.1%</strong> of students met with their groups at least once or twice a week for about an hour.</p>
 
-            <img src="./images/avail/piecharts.jpg" class="img-fluid" alt="pie chart image">
+            <a href="./images/avail/piecharts.jpg" data-toggle="lightbox">
+              <img src="./images/avail/piecharts.jpg" class="img-fluid zoomer" alt="pie chart image">
+            </a>
 
             <p>We used thematic analysis and an affinity diagram to interpret qualitative data. Seven primary themes emerged from analysis after clustering.</p>
             <p>In terms of group work, these represented the respondents' main considerations:</p>
@@ -191,12 +196,16 @@
             <p class="case-meta-title">Representative Persona</p>
             <p>Using data from our research, we brainstormed a proto-persona with a focus on habits, demographics, desires, obstacles, and needs.</p>
             <p>We then revised our proto-persona to focus on particular actionable characteristics. Here's our  finalized persona - I'd like to introduce you to Sam the Student!</p>
-            <img src="./images/avail/persona.jpg" class="img-fluid case-img" alt="persona image">
+            <a href="./images/avail/persona.jpg" data-toggle="lightbox">            
+              <img src="./images/avail/persona.jpg" class="img-fluid case-img zoomer" alt="persona image">
+            </a>
 
             <p class="case-meta-title">Empathy Mapping</p>
             <p>Through our persona and user research, we were able to develop empathy when thinking about how students typically plan group meetings.</p>
             <p>Using an empathy map, we found that Sam would feel extremely frustrated in large groups. This is especially the case when one member of her group is late to the meeting or flops entirely.</p>
-            <img src="./images/avail/empathymap.jpg" class="img-fluid case-img" alt="empathymap image">
+            <a href="./images/avail/empathymap.jpg" data-toggle="lightbox">
+              <img src="./images/avail/empathymap.jpg" class="img-fluid case-img zoomer" alt="empathymap image">
+            </a>
             <p>As a student, she feels cheated because tuition is expensive and she shouldn't be paying to learn how to deal with team logistics or drama.</p>
             <p>She just wants to be productive and get work done.</p>
 
@@ -206,7 +215,9 @@
             <p>Usually, there are four steps involved in scheduling a meeting for group projects. In order, these steps involve introducing the need to meet, sharing weekly schedules with one another, scheduling a meeting time, and the actual meet-up.</p>
             <p>We combined Sam's as-is scenario with a journey map to understand her process when she wants to schedule a meeting for her group project.</p>
             <p>We also voted on major areas of opportunity based on the severity of the issue as well as the amount of times the pain point was mentioned during research.</p>
-            <img src="./images/avail/asis.jpg" class="img-fluid case-img" alt="asis scenario image">
+            <a href="./images/avail/asis.jpg" data-toggle="lightbox">
+              <img src="./images/avail/asis.jpg" class="img-fluid case-img zoomer" alt="asis scenario image">
+            </a>
 
             <p>We learned that Sam feels like she's wasting her time overcomplicating the logistics of coordinating meetings with her group. Sam is also interested in using a service or tool that her group members already use, without having to set-up a new account or a subscription plan.</p>
             <p>In this sense, it is crucial that a solution offers her convenience and accessibility.</p>
@@ -308,12 +319,16 @@
             <p>Sam's needs statements helped us brainstorm many ideas that would address her pain points. We weren't worried about whether the idea was absurd or unreasonable because value can be found in even the worst of ideas.</p>
             <p>Using sticky notes allowed us to group each idea into their thematic clusters easily. We found that most of our ideas were related to some kind of logistics management, where the responsibility of scheduling was given to someone or something else. Other groups emerged and included school allocated time, incentivization, punishments, sharing availabilities, randomized scheduling, and automated replies for the unavailable.</p>
             <p>Then, we voted on our ideas based on their impact and feasibility and plotted them along a prioritization grid. Our votes were based on the bigger picture and whether or not we could derive insight from the idea, as opposed to interpreting the idea literally.</p>
-            <img src="./images/avail/priority.jpg" class="img-fluid case-img" alt="prioritization grid image">
+            <a href="./images/avail/priority.jpg" data-toggle="lightbox">
+              <img src="./images/avail/priority.jpg" class="img-fluid case-img zoomer" alt="prioritization grid image">
+            </a>
 
             <p class="case-meta-title">To-Be Scenario</p>
             <p>We reimagined how Sam's as-is scenario would look like if she was able to use our ideas.</p>
             <p>This is called the To-Be scenario because it guides our efforts and strategy for improving the process that Sam currently needs to go through.</p>
-            <img src="./images/avail/tobe.jpg" class="img-fluid case-img" alt="to-be scenario image">
+            <a href="./images/avail/tobe.jpg" data-toggle="lightbox">
+              <img src="./images/avail/tobe.jpg" class="img-fluid case-img zoomer" alt="to-be scenario image">
+            </a>
 
             <p class="case-meta-title">Quantifying Hills</p>
             <p>According to <a href="https://www.ibm.com/design/thinking/page/framework/keys/hills" target="_blank">design thinking principles outlined by IBM</a>, hills statements allow us to set clear goals for our solution while being implementation-agnostic.</p>
@@ -348,7 +363,9 @@
             <p>We developed a paper prototype for our MVP based on our established hills.</p>
             <p>We each brainstormed features that could be used to achieve these hills initially, then converged our findings to remove redundancy. Using these features, we diverged and converged once more to ideate on potential screens and process flows.</p>
             <p>By the end of the discussion, we devised a nine-screen process that highlights the primary function of the minimum viable product.</p>
-            <img src="./images/avail/lofi.jpg" class="img-fluid case-img" alt="lo-fi prototype image">
+            <a href="./images/avail/lofi.jpg" data-toggle="lightbox">
+              <img src="./images/avail/lofi.jpg" class="img-fluid case-img zoomer" alt="lo-fi prototype image">
+            </a>
 
             <p>This solution was meant to fulfill our first hill by being automatically integrated with the University system's API, such that any enrolled courses and any University-related events would automatically update in our solution.</p>
             <p>By allowing our users to vote on their preferred meeting time, they wouldn't need to negotiate back-and-forth in chat, thereby achieving the second hill.</p>
@@ -368,7 +385,9 @@
 
             <p class="case-meta-title">Mid Fidelity Prototype</p>
             <p>Using the feedback from our users, we developed a mid-fidelity prototype in Figma.</p>
-            <img src="./images/avail/midfi.jpg" class="img-fluid case-img" alt="midfi storyboard image">
+            <a href="./images/avail/midfi.jpg" data-toggle="lightbox">
+              <img src="./images/avail/midfi.jpg" class="img-fluid case-img zoomer" alt="midfi storyboard image">
+            </a>
             <p>We took precautions regarding privacy in this iteration of the prototype. Users have the option to set a password before invited members can join the group, and unavailable times shown on the calendar have become anonymous.</p>
             <p>Moreover, we removed the voting feature as it was found to be redundant. Instead, the solution suggests the first available meeting time the instant everyone joins the group.</p>
             <p>We also considered the integration of other calendar services to allow for non-University related events to propagate the personal calendar within the MVP.</p>
@@ -462,7 +481,7 @@
           </div>
         </div>
       </div>
-      <div class="case-section case-reflection">
+      <div class="case-section">
         <h3 class="case-reflection-title">Reflection</h3>
         <p class="">Overall, this two-month long project was based on the assumption that scheduling group meetings was a difficult and inefficient task. We were able to verify this idea using research and ultimately, we were also able to address this problem through the ideation of a potential solution. Along the way, I learned three key things that will extend to my future work:</p>
         <div class="py-2"></div>
@@ -479,7 +498,7 @@
       </div>
 
       <a id="ending"></a>
-      <div class="case-section text-center text-muted hide">
+      <div class="case-end text-center text-muted hide">
         <h6 class="">Can you tell what was the only common availability between the four schedules that were shown in the beginning of this case study? </h6>
         <h6>Go ahead and <a href="#beginning">check again</a> if you don't remember the schedules. I promise, seeing them won't make this problem easier!</h6>
         <h6>Answer (hover to reveal) : <span class="hidden-answer">Tuesday, first thing in the morning.</span></h6>
@@ -500,6 +519,7 @@
      </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/ekko-lightbox.min.js"></script>
     <script src="js/Headroom.js"></script>
     <script src="js/jQuery.headroom.js"></script>
     <script src="js/custom.js"></script>

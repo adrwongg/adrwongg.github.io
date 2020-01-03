@@ -14,4 +14,9 @@
 	   $('body').css('overflow', 'auto');
 	});
 
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox({maxWidth: 1500});
+    });
+
 })(jQuery);

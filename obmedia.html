@@ -11,6 +11,7 @@
     <title>Adrian Wong</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/style.css">
@@ -74,7 +75,7 @@
     <section class="case container justify-content-center align-items-center" id="about">
       <div class="text-center case-title full-screen">
           <h1 class="display-4"><strong>Obsolete Media</strong></h1>
-          <p class="text-muted case-desc">A digital museum that preserves the memory of over six hundred current and obsolete media formats.</p>
+          <p class="case-desc">A digital museum that preserves the memory of over six hundred current and obsolete media formats.</p>
           <div class="py-2 hide"></div>
           <div class="line mx-auto"></div>
       </div>
@@ -90,22 +91,22 @@
           <div class="row case-meta-row justify-content-end">
             <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
               <p class="case-meta-title">Project Duration</p>
-              <h6 class="text-muted">9 weeks <br>(Oct - Nov 2019)</h6>
+              <p>9 weeks <br>(Oct - Nov 2019)</p>
             </div>
             <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
               <p class="case-meta-title">Team Size</p>
-              <h6 class="text-muted">Design team of 4<br> (including me)</h6>
+              <p>Design team of 4<br> (including me)</p>
             </div>
           </div>
           <a id="beginning"></a>
           <div class="row case-meta-row justify-content-end">
             <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
               <p class="case-meta-title">My Responsibilities</p>
-              <h6 class="text-muted">Content Analysis, Card Sort Study, IA Analysis, Wireframming, Tree Maps</h6>
+              <p>Content / IA Analysis, Card Sort, Tree Tests, Wireframming</p>
             </div>
             <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
               <p class="case-meta-title">Tools Used</p>
-              <h6 class="text-muted">Content Auditor, XMind, OptimalSort, Balsamiq, Photoshop, Treejack</h6>
+              <p>Content Auditor, XMind, OptimalSort, Balsamiq, Photoshop, Treejack</p>
             </div>
           </div>
         </div>
@@ -126,7 +127,7 @@
         <div class="row">
           <div class="col-sm-1 col-md-1 col-lg-1">
             <div class="case-section-side hide">
-              <h6 class="case-side-text">Background</h6>
+              <h6 class="case-side-text">Discovery</h6>
             </div>
           </div>
           <div class="vline"></div>
@@ -138,13 +139,28 @@
 
             <p class="">Among our main findings, we discovered that the average reading grade was <strong>13.4</strong> and the average reading ease was <strong>46.4</strong> per page. According to <a href="https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests" target="_blank">Flesch-Kincaid readability tests</a>, this is almost double the reading difficulty that is recommended.</p>
 
-            <img src="./images/obmedia/barcharts.jpg" class="img-fluid" alt="bar chart image">
+            <a href="./images/obmedia/barcharts.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/barcharts.jpg" class="img-fluid zoomer" alt="bar chart image">
+            </a>
 
             <p>Although users may be professionals or hobbyists with experience in obsolete media, new users may find this reading difficulty troubling. Ad-hoc analysis seems to show that this difficulty is distributed across the website relatively equally.</p>
 
             <p>Aside from content difficulty, we also found accessibility, SEO, and loading time issues. For example, there were <strong>1640</strong> broken links, <strong>98%</strong> of images had missing alt texts, and <strong>12</strong> pages had missing meta discriptions.</p>
 
             <p>Please visit the <a href="https://contentauditor.onpointsuite.ca/Site/PublicReport?hash=9RbGNAWgtz8b-GyM5cHe4w2" target="_blank">official report</a> for more details.</p>
+
+
+            <div class="py-3"></div>
+            <p class="case-meta-title">Current IA Schematic Diagram</p>
+            <p>After our content inventory, we created a preliminary IA schematic diagram to outline the current status of the web museum.</p>
+
+            <div class="py-2"></div>
+            <a href="./images/obmedia/oldIA.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/oldIA.jpg" class="img-fluid zoomer" alt="current IA image">
+            </a>
+            <div class="py-4"></div>
+
+            <p>In the following sections, we subsequently analysed the website in greater detail.</p>
 
             <div class="py-3"></div>
 
@@ -153,7 +169,9 @@
             <p>This may prove to be confusing for first-time visitors. Introducing bottom-up links on the front page may help new users understand where to start.</p>
 
             <div class="py-2"></div>
-            <img src="./images/obmedia/buttomupsug.jpg" class="img-fluid outlined-img" alt="bottom-up suggestions image">
+            <a href="./images/obmedia/buttomupsug.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/buttomupsug.jpg" class="img-fluid outlined-img zoomer" alt="bottom-up suggestions image">
+            </a>
             <div class="py-3"></div>
 
             <div class="py-3"></div>
@@ -162,7 +180,9 @@
             <p>Suggesting similar items may help the user understand these labels with the use of bottom-up architecture; specifically, popular tags, related tags, and similar formats.</p>
 
             <div class="py-2"></div>
-            <img src="./images/obmedia/tags.jpg" class="img-fluid outlined-img" alt="tag system image">
+            <a href="./images/obmedia/tags.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/tags.jpg" class="img-fluid outlined-img zoomer" alt="tag system image">
+            </a>
             <div class="py-3"></div>
 
             <div class="py-3"></div>
@@ -170,7 +190,9 @@
             <p>The persistence of the navigation bar implies that it is meant to be used to navigate the website at a top-down, global level. However, it does not indicate where the user is at the current moment. This point is further supported by the lack of breadcrumb trails. The site seems to rely heavily on supplementary navigation systems in deeper pages.</p>
 
             <div class="py-2"></div>
-            <img src="./images/obmedia/nav.jpg" class="img-fluid outlined-img" alt="navbar image">
+            <a href="./images/obmedia/nav.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/nav.jpg" class="img-fluid outlined-img zoomer" alt="navbar image">
+            </a>
             <div class="py-3"></div>
 
             <div class="py-3"></div>
@@ -180,7 +202,9 @@
             <p>As such, the search bar may be catered specifically to users who can define the information that they want. For the users that can't specify what they're looking for, the search system can be improved in terms of usability.</p>
 
             <div class="py-2"></div>
-            <img src="./images/obmedia/search.jpg" class="img-fluid outlined-img" alt="search image">
+            <a href="./images/obmedia/search.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/search.jpg" class="img-fluid outlined-img zoomer" alt="search image">
+            </a>
           </div>
         </div>
       </div>
@@ -188,7 +212,7 @@
       <div class="case-section">
         <div class="case-section-intro">
           <h3 class="case-section-title">Understanding the User</h3>
-          <p class="case-section-desc">The core principle of user-centered design is involving the user within every part of the process. Identifying our users and developing empathy for their struggles allows us to determine the direction of our solution as well as specify our KPIs and success metrics down the line.</p>
+          <p class="case-section-desc">Given that obsolete media is a relatively specific niche, we would expect the digital museum to have different kinds of users. Here, we brainstormed different user groups and analysed their interactions while using the current interface in order to identify areas of potential improvement.</p>
           <div class="py-3"></div>
         </div>
 
@@ -205,8 +229,12 @@
             <p>Our background research informed our brainstorming sessions where we grouped potential users into four segments according to their level of expertise.</p>
             <p>Then, we recruited four participants for each level of expertise using a mix of convenience and snowball sampling.</p>
             <p>The following proto-personas embody the average demographics and characteristics for each of the participants in all four expertise levels.</p>
-            <img src="./images/obmedia/personas1.jpg" class="img-fluid case-img" alt="first two personas image">
-            <img src="./images/obmedia/personas2.jpg" class="img-fluid case-img" alt="first two personas image">
+            <a href="./images/obmedia/personas1.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/personas1.jpg" class="img-fluid case-img zoomer" alt="first two personas image">
+            </a>
+            <a href="./images/obmedia/personas2.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/personas2.jpg" class="img-fluid case-img zoomer" alt="first two personas image">
+            </a>
             <div class="py-3"></div>
 
             <p class="case-meta-title">Timed Observational Study</p>
@@ -261,7 +289,7 @@
             </div>
             <div class="user-quote">
               <blockquote class="mb-3 quote">
-                <h6>I feel like I <strong>need to know a lot about media</strong> before knowing where to go.</h6>
+                <h6>I feel like I <strong>need to know a lot about media</strong> before even knowing where to go.</h6>
                 <h6>I had <strong>no idea what the two artifacts even were</strong>, or what they did!</h6>
                 <h6>Some of the <strong>labels were unclear</strong> and I didn't know what to expect.</h6>
                 <h6>I think the collection is huge and the website covers everything (which is good), but I still think <strong>everything could be simplified.</strong></h6>
@@ -317,7 +345,7 @@
       <div class="case-section">
         <div class="case-section-intro">
           <h3 class="case-section-title">Analysing the Scope</h3>
-          <p class="case-section-desc">Before we jump into designing screens, we need to gather a better understanding of the project scope. Exploring ideas aside from digital features allows us to understand value proposition from the perspective of impact and feasibility, as well as how the solution influences the user at the end of the day.</p>
+          <p class="case-section-desc">After we developed a better understanding of how our users felt, we needed to specify how we would approach a potential solution. We conducted a card sort study with the previously described proto-personas which informed our proposed revisions and new IA schematic.</p>
           <div class="py-3"></div>
         </div>
 
@@ -330,100 +358,50 @@
           <div class="vline"></div>
           <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
 
-            <p class="case-meta-title">User Needs Statements</p>
-            <p>Based on Sam's As-Is scenario, we devised a needs statement that addressed each of her pain points. Although this needs statement was comprehensive, we found that it was too general to be actionable.</p>
-            <div class="user-quote">
-              <blockquote class="mb-3 quote">
-                <h6>I need a way to finalize a meetup time based on a consensus so that everyone can spend their time producing quality work.​</h6>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/project/samantha.jpg" alt="user" class="img-fluid">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Samantha Zhao</span>
-                  <span class="position">Undergraduate Student</span>
-                </div>
-              </div>
-            </div>
-            <p>By breaking down the scheduling process further, we were able to diverge this needs statement into four unique needs statements.</p>
-            <div class="user-quote">
-              <blockquote class="mb-3 quote">
-                <h6>I need to use a single scheduling platform that everyone already uses so that no one needs to waste time and effort making a new account.</h6>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/project/samantha.jpg" alt="user" class="img-fluid">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Samantha Zhao</span>
-                  <span class="position">Undergraduate Student</span>
-                </div>
-              </div>
-            </div>
-            <div class="user-quote">
-              <blockquote class="mb-3 quote">
-                <h6>I need a way for everyone to share their schedules so that everyone knows everyone else's availability.​​</h6>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/project/samantha.jpg" alt="user" class="img-fluid">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Samantha Zhao</span>
-                  <span class="position">Undergraduate Student</span>
-                </div>
-              </div>
-            </div>
-            <div class="user-quote">
-              <blockquote class="mb-3 quote">
-                <h6>I need to see the options of possible meetup times so that everyone can collectively vote on a time to meet.</h6>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/project/samantha.jpg" alt="user" class="img-fluid">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Samantha Zhao</span>
-                  <span class="position">Undergraduate Student</span>
-                </div>
-              </div>
-            </div>
-            <div class="user-quote">
-              <blockquote class="mb-3 quote">
-                <h6>I need to be able to update my schedule in a convenient way so that the group can quickly revise the meetup schedule as needed.</h6>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/project/samantha.jpg" alt="user" class="img-fluid">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Samantha Zhao</span>
-                  <span class="position">Undergraduate Student</span>
-                </div>
-              </div>
-            </div>
+            <p class="case-meta-title">Card Sort Study</p>
+            <p>To get a better understanding of how these personas interacted with the digital museum and what we could improve, we conducted a open card sort. We used 30 labels in total, sourced from the current global navigation as well as prominent tags.</p>
+            <p>Two participants were recruited to represent each proto-persona, for a total of eight responses. The following similarity matrix shows a summary of how different labels were grouped.</p>
+            <div class="py-2"></div>
+            <a href="./images/obmedia/simmatrix.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/simmatrix.jpg" class="img-fluid zoomer" alt="similarity matrix image">
+            </a>
+            <div class="py-4"></div>
 
-            <p class="case-meta-title">Prioritizing Ideas</p>
-            <p>Sam's needs statements helped us brainstorm many ideas that would address her pain points. We weren't worried about whether the idea was absurd or unreasonable because value can be found in even the worst of ideas.</p>
-            <p>Using sticky notes allowed us to group each idea into their thematic clusters easily. We found that most of our ideas were related to some kind of logistics management, where the responsibility of scheduling was given to someone or something else. Other groups emerged and included school allocated time, incentivization, punishments, sharing availabilities, randomized scheduling, and automated replies for the unavailable.</p>
-            <p>Then, we voted on our ideas based on their impact and feasibility and plotted them along a prioritization grid. Our votes were based on the bigger picture and whether or not we could derive insight from the idea, as opposed to interpreting the idea literally.</p>
-            <img src="./images/avail/priority.jpg" class="img-fluid case-img" alt="prioritization grid image">
+            <p>After analysing the card sort, we found consistency between the <i>About</i> and the <i>Media Preservation</i> sections, indicating that the participants were able to intuitively group cards that concerned the metadata of the museum and obsolete media in general.</p>
 
-            <p class="case-meta-title">To-Be Scenario</p>
-            <p>We reimagined how Sam's as-is scenario would look like if she was able to use our ideas.</p>
-            <p>This is called the To-Be scenario because it guides our efforts and strategy for improving the process that Sam currently needs to go through.</p>
-            <img src="./images/avail/tobe.jpg" class="img-fluid case-img" alt="to-be scenario image">
+            <p>However, we found inconsistency within the specific formats in the website, suggesting that the users had a shallow understanding of the particular types of media. This discrepency was even found amoung the participants with the greatest levels of expertise.</p>
 
-            <p class="case-meta-title">Quantifying Hills</p>
-            <p>According to <a href="https://www.ibm.com/design/thinking/page/framework/keys/hills" target="_blank">design thinking principles outlined by IBM</a>, hills statements allow us to set clear goals for our solution while being implementation-agnostic.</p>
-            <p>They are typically structured according to who the user is, what is the need they're trying to meet, and the measurable wow statement that differentiates our solution from current competitors'.</p>
-            <p>The three following hills were derived from a set of twenty after a rigorous elimination and voting process.</p>
+            <div class="py-3"></div>
+
+            <p class="case-meta-title">Proposed Revisions</p>
+            <p>The seven following revisions were proposed in response to the results of the card sort, as well as the observations made in user analysis.</p>
             <ol>
-              <li>Sam will be able to see her groupmates’ up-to-date schedules because schedules will be updated automatically.</li>
-              <li>Sam and her group can easily come to a consensus of a meetup time without going back and forth in discussions or worrying about being the odd one out.</li>
-              <li>Sam will be able to finalize a meeting schedule that all of her groupmates can be happy with in less than 10 minutes.</li>
+              <li>Single point of entry into collection<br><p>Our analysis so far indicates that a more effective interface would consolidate format types into a single button, providing entry to the museum’s primary content.</p></li>
+
+              <li>Labelling system overhaul<br><p>Our proposed changes to the global navigation menu are based on card sort analysis that showed a clear distinction between items in the collection versus more general content.</p></li>
+
+              <li>Collection filter toggles<br><p>By selecting toggles to hide or display certain traits, a user with any level of familiarity can narrow the collection to a more manageable size.</p></li>
+
+              <li>Collection time-range slider<br><p>Separating the temporal metadata from other details is consistent with results from our card sort, in which we observed users distinguishing years from all other cards.</p></li>
+
+              <li>Homepage curated suggestions<br><p>A sequential, curated journey would provide the context needed to dig deeper into the collection, manifesting as a guided tour of the museum for users without expertise.</p></li>
+
+              <li>Search keyword identification<br><p>If a user searches for a keyword that exists as a collection filter, we propose a technical function that would invite users to instead apply that filter to the collection directly.</p></li>
+
+              <li>Content suggestion mechanism<br><p>This mechanism will benefit those seeking to identify an item if their search isn’t perfectly accurate, drawing from users’ anecdotes about how similar many formats can seem. </p></li>
             </ol>
+
+            <div class="py-3"></div>
+            <p class="case-meta-title">New IA Schematic</p>
+
+            <p>Applying these proposed revisions and user observations, we ideated on a new IA schematic.</p>
+
+            <div class="py-2"></div>
+            <a href="./images/obmedia/newIA.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/newIA.jpg" class="img-fluid zoomer" alt="proposed IA image">
+            </a>
+            <div class="py-4"></div>
+
           </div>
         </div>
       </div>
@@ -431,7 +409,7 @@
       <div class="case-section">
         <div class="case-section-intro">
           <h3 class="case-section-title">Designing the Solution</h3>
-          <p class="case-section-desc">Now that we specified potential solutions and goals, we quickly developed prototypes to visualize and quantify the experience we were proposing. This also allowed us to explore the information architecture and the sequential process of each task in greater detail.</p>
+          <p class="case-section-desc">In order to visualize the proposed revisions and interactions with the new IA schematic, we created wireframe sketches to facilitate agile evaluation. We also developed a clickable wireframe to illustrate and analyse potential storyboards that were unique to each user type.</p>
           <div class="py-3"></div>
         </div>
 
@@ -444,36 +422,42 @@
           <div class="vline"></div>
           <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
 
-            <p class="case-meta-title">Low Fidelity Prototype</p>
-            <p>We developed a paper prototype for our MVP based on our established hills.</p>
-            <p>We each brainstormed features that could be used to achieve these hills initially, then converged our findings to remove redundancy. Using these features, we diverged and converged once more to ideate on potential screens and process flows.</p>
-            <p>By the end of the discussion, we devised a nine-screen process that highlights the primary function of the minimum viable product.</p>
-            <img src="./images/avail/lofi.jpg" class="img-fluid case-img" alt="lo-fi prototype image">
-
-            <p>This solution was meant to fulfill our first hill by being automatically integrated with the University system's API, such that any enrolled courses and any University-related events would automatically update in our solution.</p>
-            <p>By allowing our users to vote on their preferred meeting time, they wouldn't need to negotiate back-and-forth in chat, thereby achieving the second hill.</p>
-            <p>Finally, we were hoping that this entire process would be much simpler than Sam's as-is scenario. As a result, we would accomplish the third hill by reducing the amount of time needed to schedule a meeting, from 30 minutes to under 10.</p>
-
+            <p class="case-meta-title">Wireframe Sketches</p>
+            <p>According to the new IA schematic and the revisions proposed, we sketched different screens to get a better understanding of a potential interface that would accomodate our changes.</p>
+            <a href="./images/obmedia/sketches.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/sketches.jpg" class="img-fluid case-img zoomer" alt="lo-fi sketches image">
+            </a>
+            <p>These sketches allowed us to communicate the differences in IA to potential users and stakeholders while gathering evaluative feedback in an agile way.</p>
             <div class="py-3"></div>
 
             <p class="case-meta-title">Lean Evaluation</p>
-            <p>We conducted <i>Wizard of Oz</i> usability testing with a paper prototype to quickly assess the strengths and weaknesses of the initial iteration. We also asked our participants to engage in a think-aloud protocol as they went through the main function of the application (creating a group and scheduling a meeting).</p>
-            <p class="">We briefly screened our participants and defined our inclusion criteria. In total, we had four final participants who were either recent alumni or current undergraduate students whom experienced multiple group projects which required them meeting at least four other students in-person.</p>
-            
-            <p class="">Our participants seemed to like how easy it was to set up a group, the aggregation of every member's calendar into a single group calendar, and the ability to confirm a meeting time which was similar to RSVPing to an event.</p>
-
-            <p class="">Moving forward, we needed to address user's concerns about keeping their own day-to-day activities private, the redundancy of a voting system given the final confirmation, integrating non-University events, and the clarity of particular labels.</p>
+            <p>We showed our sketched wireframes to the participants of the user analysis as they had prior experience of the web museum, explaining the changes that we made and what they would need to do in order to complete certain tasks. We took note of the tasks they were interested in.</p>
+            <p class="">We were also happy to find that participants unanimously felt that the infrastructure was accomodating for their demographic, even though their levels of expertise varied.</p>
+            <p>Overall, users rated the wireframe highly on all seven facets of <a href="https://www.usability.gov/what-and-why/user-experience.html" target="_blank">Peter Morville's honeycomb of UX</a>, especially in terms of findability.</p>
 
             <div class="py-3"></div>
 
-            <p class="case-meta-title">Mid Fidelity Prototype</p>
-            <p>Using the feedback from our users, we developed a mid-fidelity prototype in Figma.</p>
-            <img src="./images/avail/midfi.jpg" class="img-fluid case-img" alt="midfi storyboard image">
-            <p>We took precautions regarding privacy in this iteration of the prototype. Users have the option to set a password before invited members can join the group, and unavailable times shown on the calendar have become anonymous.</p>
-            <p>Moreover, we removed the voting feature as it was found to be redundant. Instead, the solution suggests the first available meeting time the instant everyone joins the group.</p>
-            <p>We also considered the integration of other calendar services to allow for non-University related events to propagate the personal calendar within the MVP.</p>
-            <p>Finally, we renamed the <i>Results</i> section to <i>Options</i> and clarified the UI of the tabs. <i>Options</i> is different from <i>Results</i> in that instead of relying on user votes, the application will make smart suggestions (or options) based on the characteristics of the time slots. This may include recommending the longest meeting time, the shortest meeting time, or the time slot that was previously picked by the user.</p>
-
+            <p class="case-meta-title">Clickable Storyboards</p>
+            <p>Moving forward, we brainstormed unique scenarios that would be characteristic of each of our proto-personas based on lean research, and developed a clickable prototype in Balsamiq.</p>
+            <a href="./images/obmedia/scen1.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/scen1.jpg" class="img-fluid case-img zoomer" alt="scenario 1 image">
+            </a>
+            <p>Stanley (the student) wants to explore the museum by viewing whatever the curator features. Since he has limited background knowledge, he wants to see content that could generally spark his interest but doesn't know what he's looking for specifically.</p>
+            <div class="py-3"></div>
+            <a href="./images/obmedia/scen2.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/scen2.jpg" class="img-fluid case-img zoomer" alt="scenario 2 image">
+            </a>
+            <p>Eddie (the museum enthusiast) wants to learn more about the museum itself. He finds obsolescent media curation fascinating, and wants to understand how it's done. Being an enthusiast, he'll surely have comments and questions to share with the curator.</p>
+            <div class="py-3"></div>
+            <a href="./images/obmedia/scen3.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/scen3.jpg" class="img-fluid case-img zoomer" alt="scenario 3 image">
+            </a>
+            <p>Debra Turner (the media technician) is wondering why she can't find exact replacements for her company's audio equipment. She can describe the format and the time period it was used, so she checks details regarding its obsolescence. She also wants to know what replaced it in the industry.</p>
+            <div class="py-3"></div>
+            <a href="./images/obmedia/scen4.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/scen4.jpg" class="img-fluid case-img zoomer" alt="scenario 4 image">
+            </a>            
+            <p>Jayce Henrique (the media historian) is somewhat of a curator himself. Seeing the impressive collection of the museum, he wants to contribute his artifacts to a place that can be accessed by the general public. He wants to collaborate with the museum's curator.</p>
           </div>
         </div>
       </div>
@@ -481,7 +465,7 @@
       <div class="case-section">
         <div class="case-section-intro">
           <h3 class="case-section-title">Verifying the Efficacy</h3>
-          <p class="case-section-desc">Before the next design iteration, it's imperative that we conduct summative research to examine our progress and the effectiveness of our mid-fidelity solution. We used the <a href="http://www.id-book.com/fourthedition/downloads/ID3Chapter13Anevaluationframework.pdf" target="_blank">DECIDE framework</a> to validate any of our previous assumptions and examine the efficacy of the MVP.</p>
+          <p class="case-section-desc">In order to evaluate our revisions, we conducted a tree test and observational studies based on the tasks in the established storyboards. We intentionally kept the wireframes low-fidelity and facilitated observations openly to understand what the users expected to see in each page.</p>
           <div class="py-3"></div>
         </div>
 
@@ -493,89 +477,45 @@
           </div>
           <div class="vline"></div>
           <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
-            <p class="case-meta-title">Methodology</p>
-            <p class="">To evaluate our mid-fidelity prototype, we used a mixed-methods approach to examine the overall UX of the application.</p>
-            <p class="">Using the inclusion criteria listed previously, we met with four participants in at a quiet location where we could talk face-to-face individually. The research session would consist of a timed observation of the user interacting with the product and attempting to complete three primary tasks, a semi-structured interview, and a brief questionnaire.</p>
-            <p>The three tasks were:</p>
-            <ol>
-              <li>Sync your personal calendar with the application</li>
-              <li>Create a group and find a suitable meeting time</li>
-              <li>Confirm an additional meeting time within an existing group</li>
-            </ol>
-            <div class="py-1"></div>
-            <p>For the duration of the study, we asked the participant to use their own smartphone, so that they could interact with our prototype using a device they were already accustomed to. This also allows us to pin-point problems of usability on the interface itself, as oppose to learning how to use a new device.</p>
-            <p class="">Then, we organized the gathered data according to the user's subjective experience of using the application and more quantifiable aspects of usability.</p>
-
+            <p class="case-meta-title">Tree Test and Observations</p>
+            <p>We conducted a tree test with three users per proto-persona to evaluate their ability to conceptually understand the steps needed to complete their respective user scenarios.</p>
+            <p>Using a different set of participants, we also gathered feedback on the clickable prototype. As they attempted to complete each scenario, we answered their general questions regarding the page's content. This open method allowed us to note any information that the user expected to see.</p>
+            <a href="./images/obmedia/tree1.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/tree1.jpg" class="img-fluid case-img zoomer" alt="treemap 1 image">
+            </a>
+            <p>Users enjoyed the featured format page but didn't necessarily feel that specifying the featured format type was necessary or particularly helpful. They just wanted to see a featured artifact, whatever its type may be.</p>
             <div class="py-3"></div>
-            <p class="case-meta-title">Experience Analysis</p>
-            <p class="">After interacting with the prototype, we asked the participants to rate their overall satisfaction with each task out of five.</p>
-            <div class="row justify-content-between">
-              <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-                <h1 class="mb-1">3.75<span class="small text-muted"> /5</span></h1>
-                <p>Task 1</p>
-              </div>
-              <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-                <h1 class="mb-1">5<span class="small text-muted"> /5</span></h1>
-                <p>Task 2</p>
-              </div>
-              <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-                <h1 class="mb-1">2.5<span class="small text-muted"> /5</span></h1>
-                <p>Task 3</p>
-              </div>            
-            </div>
+            <a href="./images/obmedia/tree2.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/tree2.jpg" class="img-fluid case-img zoomer" alt="treemap 2 image">
+            </a>
+            <p>Users found it easy to contact the curator. However, there was minor contention as to whether information regarding media preservation should be in the <i>About</i> tab or should be kept separate.</p>
             <div class="py-3"></div>
-
-            <p class="">Users found that syncing their personal calendar with Avail was relatively unambiguous but suggested improvements to the clarity of the icons. When asked, they were unsure whether the calendar would automatically sync with the system or if it needed to be synced by the user every time. Moving forward, we need to clarify this point in order to achieve our first hill.</p>
-            <p class="">We were happy to find that users unanimously agreed that creating a group and finding a suitable meeting time was easy and straightforward. Users were especially satisfied with how quick it was to find a common meeting time - this was their <i>AHA</i> moment.</p>
-            <p class="">Participants found difficulty when trying to confirm an additional meeting time. They felt that it was pointless to separate the options from the primary tab and also felt that the calendar should be interactive (i.e. users tried to confirm a meeting time by clicking directly on a blank area on the calendar) since it was in the default tab.</p>
-
-            <p class="">Finally, users were asked if they would need to resort back to negotiating meeting times after using Avail. All four users mentioned that they would only need to do so in very rare circumstances. In this sense, we were able to achieve our second hill.</p>
-
+            <a href="./images/obmedia/tree3.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/tree3.jpg" class="img-fluid case-img zoomer" alt="treemap 3 image">
+            </a>
+            <p>All participants agreed that relying on a revised search schematic rather than the current navigation system was a substantial improvement. Users with high levels of expertise gave filter suggestions (e.g. brands).</p>
             <div class="py-3"></div>
-
-            <p class="case-meta-title">Usability Assessment</p>
-            <p class="">Since we timed the user's completion of the three tasks separately, we were able to assess the usability of the MVP as well as whether it fulfilled our final hill of finalizing a meetup schedule in less than 10 minutes.</p>
-            <div class="row justify-content-between">
-              <div class="col-sm-4 col-md-4 col-lg-4 text-center text-muted ">
-                <h1 class="mb-1">27s</h1>
-                <p>Task 1</p>
-              </div>
-              <div class="col-sm-4 col-md-4 col-lg-4 text-center text-muted ">
-                <h1 class="mb-1">34s</h1>
-                <p>Task 2</p>
-              </div>
-              <div class="col-sm-4 col-md-4 col-lg-4 text-center text-muted ">
-                <h1 class="mb-1">1m 46s</h1>
-                <p>Task 3</p>
-              </div>            
-            </div>
-
-            <div class="py-3"></div>
-
-            <p class="">Since our prototype was designed to follow a happy path, we don't anticipate that these times would reflect real-world interactions perfectly. However, even if we were to double, triple, or even quadruple these times, our third hill is still met and the time needed to finalize a meeting was significantly less than 10 minutes.</p>
-
-            <p class="">We also asked the participant to complete the <a href="https://measuringu.com/sus/" target="_blank">System Usability Scale</a>, a peer-reviewed and standardized measurement of usability where a score of <strong>68</strong> is considered average. Our mean SUS score was <strong>79.38</strong>. We believe our score was relatively high given the simplicity of our application; we anticipate this score to decrease as we introduce more features in future iterations but are optimistic of the current results.</p>
-
-            <div class="py-3"></div>
-
-            <p class="">Links to Research: <a href="https://docs.google.com/spreadsheets/d/1-X6-u6QOtOwkdweHkfaxQ3AGiZV1XG8FQid5HVGD5CM/edit?usp=sharing" target="_blank">Script</a> | <a href="https://docs.google.com/spreadsheets/d/1atVeQKKWKUnlb-8GKbYr3Ry7_cgR-bzNNXlWK_JtvxA/edit?usp=sharing" target="_blank">Questionnaire</a> | <a href="https://docs.google.com/spreadsheets/d/1xJ63oRKazM_gI5B_eCC3JjwuMTMtNrRCtIkT7fSxy7Q/edit?usp=sharing" target="_blank">Raw Data</a></p>
+            <a href="./images/obmedia/tree4.jpg" data-toggle="lightbox">
+              <img src="./images/obmedia/tree4.jpg" class="img-fluid case-img zoomer" alt="treemap 4 image"> 
+            </a>          
+            <p>Some users expected to be able to contact the curator directly in the <i>Wanted</i> page. They also wanted to be able to have the option to send an image of the artifact in case they couldn't describe the format accurately.</p>
           </div>
         </div>
       </div>
-      <div class="case-section case-reflection">
+      <div class="case-end">
         <h3 class="case-reflection-title">Reflection</h3>
-        <p class="">Overall, this two-month long project was based on the assumption that scheduling group meetings was a difficult and inefficient task. We were able to verify this idea using research and ultimately, we were also able to address this problem through the ideation of a potential solution. Along the way, I learned three key things that will extend to my future work:</p>
+        <p class="">With observations and tree tests, we found evidence to suggest that our proposed revisions made significant improvements to the existing IA structure for users across expertise groups. Along the way, I learned three key things that will extend to my future work:</p>
         <div class="py-2"></div>
-        <p class="case-meta-title">Interpret Data with Caution</p>
-        <p class="">Don't follow what users say blindly, but rather interpret their suggestions appropriately to focus on what users actually want and what users actually need (e.g. privacy, simplicity).</p>
+        <p class="case-meta-title">Specify User Groups as Needed</p>
+        <p class="">There is no <i>one size fits all</i> when it comes to something as complicated as a digital museum! There is value in subdividing personas into multiple personas when their experiences are fundamentally different.</p>
         <div class="py-2"></div>
-        <p class="case-meta-title">Avoid Working in a Silo</p>
-        <p class="">As was also suggested in our secondary research, our best work was done when everyone was present in person and communicating effectively. Like Sam, we had to deal with scheduling logistics as well, but that didn't stop us!</p>
+        <p class="case-meta-title">Value the Narrative</p>
+        <p class="">We tend to forget that we're designing experiences when we're working something as technical as information architecture. As UX practitioners, we have storytelling superpowers! Use them! Don't forget to base design decisions on the user's story.</p>
         <div class="py-2"></div>
-        <p class="case-meta-title">Keep an Open Mind</p>
-        <p class="">Facing criticism and unexpected research findings give way for growth and will lead to the design and development of a great solution. Recognize  biases (confirmation bias, observer biases, response biases) to avoid them.</p>
+        <p class="case-meta-title">UI Facilitates IA, Not the Other Way Around</p>
+        <p class="">UX is not UI and UI is not IA! Working in UX, we tend to forget that most experiences are felt, not seen. Never rush to finish a visual interface, especially when the underlying infrastructure is flawed. Focus on the basics and flourish from there.</p>
         <div class="py-2"></div>
-        <p class="">Moving forward with this solution, we would like to extend our mid-fi assessment to develop a higher-fidelity prototype with additional features to test beyond the happy path, such as incorporating locations, direct interaction with the main calendar, and exporting data to other applications (such as Facebook Messenger). We would also like to extend our findings to larger sample sizes and populations outside of the University of Toronto in order to pitch this solution to scale.</p>      
+        <p class="">Moving forward with these revisions, we would like to analyse the labelling system in greater depth. In terms of research, bias was possibly introduced through snowball sampling. Clustered sampling would be a better recruitment method but would require greater resources given the scarcity of media obsolescence experts.</p>      
       </div>
 
     <!-- FOOTER -->
@@ -592,6 +532,7 @@
      </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/ekko-lightbox.min.js"></script>
     <script src="js/Headroom.js"></script>
     <script src="js/jQuery.headroom.js"></script>
     <script src="js/custom.js"></script>
