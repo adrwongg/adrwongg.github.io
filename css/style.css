@@ -510,7 +510,7 @@ h6 {
   transition: all 0.4s ease;
 }
 .contact-form .submit-btn:hover {
-  color: #000000;
+  color: white;
   cursor: pointer;
 }
 
@@ -680,7 +680,8 @@ h6 {
   }
 
   .hero {
-    padding-top: 3rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
     height: auto;
   }
 
@@ -765,7 +766,7 @@ h6 {
   }
 
   .custom-btn.custom-btn-bg {
-    background-color: #333333;
+    background-color: royalblue;
     color: #FFFFFF;
   }
 
