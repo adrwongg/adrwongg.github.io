@@ -36,7 +36,17 @@ iframe {
 }
 
 .hero {
-  height: 80vh;
+  height: 91vh;
+  padding-bottom: 80px;
+}
+
+.project-quote {
+  color: black;
+  padding: 30px;
+  line-height: 1.7;
+  font-style: italic; 
+  border-top: 1px solid rgba(65, 105, 225, 1);
+  margin-top: 4rem;
 }
 
 .user-quote {
@@ -45,23 +55,23 @@ iframe {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   line-height: 1.7;
   font-style: italic; 
-  border-left: 3px solid rgba(65, 105, 225, 0.5);
+  border-left: 3px solid rgba(65, 105, 225, 1);
   margin-top: 2rem;
 }
-.user-quote .vcard figure {
+.vcard figure {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50px;
   flex: 0 0 50px; 
 }
-.user-quote .vcard figure img {
+.vcard figure img {
   border-radius: 50%; 
 }
-.user-quote .vcard .vcard-text {
+.vcard .vcard-text {
   font-style: normal;
   font-weight: 400;
   line-height: 1.2; 
 }
-.user-quote .vcard .vcard-text .position {
+.vcard .vcard-text .position {
   color: #7A7A7A; 
   font-size: 80%;
 }
@@ -129,13 +139,7 @@ iframe {
 }
 
 .project-card {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2.5rem 0 2.5rem 0;
-  cursor: pointer;
-}
-
-.project-card img{
+  background-color: #ffffff;
   -webkit-transition: all 200ms ease-in;
   -webkit-transform: scale(1);
   -ms-transition: all 200ms ease-in;
@@ -144,12 +148,15 @@ iframe {
   -moz-transform: scale(1);
   transition: all 200ms ease-in;
   transform: scale(1);
-  border-radius: 5px;
-  max-width: 95%;
-  height: auto;
+  align-items: center;
+  height: 80vh;
+  margin-left: 5%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom:5rem;
 }
 
-.project-card img:hover {
+.project-card:hover {
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.1);
   z-index: 2;
   -webkit-transition: all 200ms ease-in;
   -webkit-transform: scale(1.5);
@@ -158,12 +165,24 @@ iframe {
   -moz-transition: all 200ms ease-in;
   -moz-transform: scale(1.5);
   transition: all 200ms ease-in;
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .project-card-text {
-  margin-top: 2rem;
-  padding-left: 2rem;
+  position: relative;
+  right: 3rem;
+}
+
+.project-card img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.project-card-img{
+  position: relative;
+  left: -5rem;
+  padding: 3rem 0;
 }
 
 .line {
@@ -262,6 +281,7 @@ h3 {
 }
 
 h3,
+h4,
 b, strong {
   font-weight: bold;
   color: black;
@@ -713,6 +733,7 @@ h6 {
 
   .full-screen {
     padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .logo {
@@ -753,19 +774,23 @@ h6 {
   }
 
   .project-card {
-    margin: 1rem 15px 1rem 15px;
+    margin-right: 5%;
+  }
+
+  .project-card-text {
+    position: static;
+    padding: 0 2rem;
   }
 
   .project-card img{
     max-width: 100%;
     height: auto;
-    padding-right: 0;
+    vertical-align: bottom;
+    padding: 0;
   }
 
-  .project-card-text {
-    padding: 25px 25px 15px 25px;
-    margin-top: 0;
-    border-top: none;
+  .project-card-img{
+    position: static;
   }
 
   .headshot {
