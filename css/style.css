@@ -138,6 +138,28 @@ iframe {
   background-color: #FAFAFA;
 }
 
+.about-desc {
+  margin-bottom: 8rem;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+
+.process-title .line {
+  margin: 20px auto;
+}
+
+.process h6 {
+  font-size: 14px; 
+  color: black;
+}
+
+.process-icon {
+  width: 50%;
+  margin: 1rem 0 2rem 0;
+}
+
 .project-card {
   background-color: #ffffff;
   -webkit-transition: all 200ms ease-in;
@@ -323,7 +345,7 @@ h6 {
 .animated-info {
   display: inline-block;
   vertical-align: top;
-  min-width: 800px;
+  min-width: 900px;
   position: relative;
 }
 
@@ -596,6 +618,13 @@ h6 {
   margin-bottom: 2rem;
 }
 
+.case-subsection-title {
+  font-weight: 900;
+  color: black;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
 .case-reflection-title {
   margin-bottom: 2rem;
 }
@@ -664,8 +693,8 @@ h6 {
   margin-bottom: 3rem;
 }
 
-.case-end {
-  margin-bottom: 5rem !important;
+.case-reflection {
+  padding-bottom: 4rem;
 }
 
 .case-quote {
@@ -700,6 +729,10 @@ h6 {
 
   .mobile {
     display: block !important;
+  }
+
+  .divider {
+    padding: 0;
   }
 
   .navbar-brand {
@@ -811,6 +844,7 @@ h6 {
     display: inline;
   }
 
+
   .project-card {
     margin-right: 5%;
   }
@@ -836,6 +870,10 @@ h6 {
     margin: 15px 0 40px 0;
   }
 
+  .about {
+    margin-top: 1rem;
+  }
+
   .about-text {
     margin-left: 0;
     padding: 0 15px;
@@ -843,6 +881,26 @@ h6 {
 
   .contact-form .form-control {
     margin: 10px 0;
+  }
+
+  .about-desc {
+    margin-bottom: 3rem;
+  }
+
+  .process-title {
+    margin-bottom: 3rem;
+  }
+
+  .process-title h4{
+    padding: 0 15px;
+  }
+
+  .process-title .line{
+    margin-left: 15px;
+  }
+
+  .process-card {
+    margin-bottom: 3rem;
   }
 
   .message {

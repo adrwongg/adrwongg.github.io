@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1_1_" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve" width="512px" height="512px"><g><g>
+	<g>
+		<polygon style="fill:#4B68DA" points="49,30 47,30 39,30 39,34 47,34 47,50 33,50 33,59 47,59 51,59 59,59 59,30   " data-original="#F0BC5E" class="active-path" data-old_color="#F0BC5E"/>
+	</g>
+	<g>
+		<rect x="5" y="5" width="2" height="2" data-original="#000000" class="" style="fill:#000000"/>
+		<rect x="9" y="5" width="2" height="2" data-original="#000000" class="" style="fill:#000000"/>
+		<rect x="13" y="5" width="2" height="2" data-original="#000000" class="" style="fill:#000000"/>
+		<path d="M57,25V1H1v50h28v12h34V25H57z M55,3v6H3V3H55z M3,49V11h52v14H35.586L29,31.586V37H10c-2.757,0-5,2.243-5,5s2.243,5,5,5    h19v2H3z M17,45v-2h18v2H17z M10,45c-1.654,0-3-1.346-3-3s1.346-3,3-3h1v6H10z M13,39h2v6h-2V39z M37,39.443l5.713,2.142    C42.885,41.65,43,41.816,43,42s-0.115,0.35-0.288,0.415L37,44.557V39.443z M35,41H17v-2h18V41z M35,28.414V31h-2.586L35,28.414z     M61,61H31V47h5.181l7.233-2.712C44.363,43.933,45,43.013,45,42s-0.637-1.933-1.585-2.288L36.181,37H31v-4h6v-6h24V61z" data-original="#000000" class="" style="fill:#000000"/>
+		<rect x="39" y="29" width="20" height="2" data-original="#000000" class="" style="fill:#000000"/>
+		<rect x="39" y="33" width="20" height="2" data-original="#000000" class="" style="fill:#000000"/>
+		<rect x="47" y="37" width="12" height="2" data-original="#000000" class="" style="fill:#000000"/>
+		<rect x="47" y="41" width="12" height="2" data-original="#000000" class="" style="fill:#000000"/>
+		<rect x="47" y="45" width="12" height="2" data-original="#000000" class="" style="fill:#000000"/>
+		<rect x="33" y="49" width="26" height="2" data-original="#000000" class="" style="fill:#000000"/>
+		<rect x="33" y="53" width="26" height="2" data-original="#000000" class="" style="fill:#000000"/>
+		<rect x="57" y="57" width="2" height="2" data-original="#000000" class="" style="fill:#000000"/>
+		<rect x="33" y="57" width="22" height="2" data-original="#000000" class="" style="fill:#000000"/>
+	</g>
+	<g>
+		<g>
+			<path style="fill:#4B68DA" d="M27,23H5V13h22V23z" data-original="#F0BC5E" class="active-path" data-old_color="#F0BC5E"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path style="fill:#4B68DA" d="M27,35H5V25h22V35z" data-original="#F0BC5E" class="active-path" data-old_color="#F0BC5E"/>
+		</g>
+	</g>
+</g></g> </svg>
