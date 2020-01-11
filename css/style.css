@@ -784,11 +784,6 @@ h6 {
     padding-bottom: 1rem;
   }
 
-  .custom-btn.custom-btn-bg {
-    background-color: royalblue;
-    color: #FFFFFF;
-  }
-
   .break {
     display: inline;
   }
@@ -926,7 +921,6 @@ h6 {
 
 }
 @media (max-width: 580px) {
-
   .hide {
     display: none !important;
   }
