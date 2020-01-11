@@ -526,62 +526,6 @@ h6 {
   display: block;
 }
 
-.google-map {
-  height: 300px;
-}
-
-.google-map iframe {
-  width: 100%;
-}
-
-.contact-form {
-  position: relative;
-}
-.contact-form .form-control {
-  background: transparent;
-  border-radius: 2px;
-  outline: none;
-  box-shadow: none;
-  margin: 16px 0;
-}
-.contact-form .form-control:not(textarea) {
-  height: 48px;
-}
-.contact-form .form-control:hover, .contact-form .form-control:focus {
-  border-color: royalblue;
-}
-.contact-form .submit-btn {
-  background: royalblue;
-  border-radius: 0.25rem;
-  color: white;
-  font-weight: bold;
-  border: 0;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-.contact-form .submit-btn:hover {
-  color: white;
-  cursor: pointer;
-}
-
-.contact-info {
-  background: #474559;
-  border-radius: 0 0 3px 3px;
-  position: relative;
-}
-
-.contact-info-item {
-  margin-top: 0.75em;
-}
-
-.contact-info p {
-  color: #f7f3f3;
-}
-
-.contact-info a {
-  color: #9FCDFF;
-}
-
 .case-title {
   padding: 5rem 15rem 0 15rem;
 }
@@ -879,10 +823,6 @@ h6 {
     padding: 0 15px;
   }
 
-  .contact-form .form-control {
-    margin: 10px 0;
-  }
-
   .about-desc {
     margin-bottom: 3rem;
   }
@@ -1020,10 +960,6 @@ h6 {
 
   .mobile-block {
     display: block;
-  }
-
-  .contact-info {
-    flex-direction: column;
   }
 
   .social-links li {
