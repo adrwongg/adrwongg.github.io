@@ -703,6 +703,9 @@ h6 {
 }
 
 @media (max-width: 991px) {
+  .process-icon {
+    width: 40%;
+  }
   .animated {
     font-size: 3rem !important;
   }
@@ -1059,6 +1062,12 @@ h6 {
 @media (max-width: 580px) {
   .hide {
     display: none !important;
+  }
+  .custom-btn {
+    margin-right: 0;
+  }
+  .process-icon {
+    width: 30%;
   }
 
 	.animated-info {
