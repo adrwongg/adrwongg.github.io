@@ -240,7 +240,7 @@ iframe {
 
 .logo {
   height: 30px !important;
-  display: none;
+  display: inline;
 }
 
 .full-screen {
@@ -860,10 +860,6 @@ h6 {
   .full-screen {
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-
-  .logo {
-    display: inline;
   }
 
   .hide {
