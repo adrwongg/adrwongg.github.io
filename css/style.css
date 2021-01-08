@@ -241,6 +241,7 @@ iframe {
 .logo {
   height: 30px !important;
   display: inline;
+  margin-right: 10px;
 }
 
 .full-screen {
