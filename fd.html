@@ -20,7 +20,6 @@
     <link rel="icon" type="image/png" href="./images/logo.png">
   </head>
   <body>
-
     <a id="top"></a>
 
     <!-- MENU -->
@@ -74,8 +73,20 @@
                     </li>
                 </ul>
             </div>
+
         </div>
     </nav>
+    <div class="scroll-line tabhide hide"></div>
+    <div class="section-nav tabhide hide">
+      <ul class="">
+        <li class="nav-disc"><a href="#discovery">Discovery</a></li>
+        <li class="nav-ana"><a href="#analysis">User Analysis</a></li>
+        <li class="nav-idea"><a href="#ideation">Ideation</a></li>
+        <li class="nav-proto"><a href="#prototyping">Prototyping</a></li>
+        <li class="nav-eval"><a href="#evaluation">Evaluation</a></li>
+        <li class="nav-iter"><a href="#iteration">Iteration</a></li>
+      </ul>
+    </div>
 
     <!-- CASE -->
     <section class="case container justify-content-center align-items-center" id="about">
@@ -88,7 +99,7 @@
 
       <img src="./images/fd/handshake-hero.jpg" class="img-fluid case-hero" alt="fd hero image">
 
-      <div class="row case-section justify-content-between align-items-center">
+      <div class="row justify-content-between align-items-center">
         <div class="col-sm-5 col-md-5 col-lg-5 case-brief">
           <h3 class="mb-3">Problem Statement</h3>
           <p class="">Financial disclosure is typically the most time consuming, expensive, and unpleasant process in the dispute resolution process.</p>
@@ -119,148 +130,123 @@
         </div>
       </div>
 
-      <div class="case-section text-center hide text-muted">
+      <div class="text-center hide text-muted tidbit">
         <img src="./images/fd/intro.jpg" class="img-fluid case-intro-img" alt="intro image">
         <div class="py-2"></div>
         <h6 class="">Like many things, the <a href="https://thedesignsquiggle.com/" target="_blank">design squiggle</a> can be used to understand the divorce process.</h6>
       </div>
 
-      <div class="case-section">
+      <div class="case-section" id="discovery">
         <div class="case-section-intro">
-          <h3 class="case-section-title">Defining the Problem <span class="hide">Space</span></h3>
+          <h3 class="case-section-title">Defining the Problem</h3>
+          <div class="thinline"></div>
           <p class="case-section-desc">For research throughout the project, we collaborated with an industry partner who gave us access to information regarding their practice. Since we focused on dispute resolution, we looked into the legal separation process in Ontario. These were the key insights in our user discovery process.</p>
-          <div class="py-3"></div>
         </div>
+        <div class="case-section-content">
+          <p class="case-subsection-title">Secondary Research</p>
+          <p><a href="https://link.springer.com/content/pdf/10.1007/BF01054464.pdf" target="_blank">Retting et al.</a> suggests that in dispute processes such as in divorce proceedings, individuals are primarily concerned with fair procedures and <strong>procedural justice</strong>. Elements of procedural justice include exhibiting respect, voice, understanding, neutral decision-making, and helpfulness.</p>
 
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-lg-1">
-            <div class="case-section-side hide">
-              <h6 class="case-side-text">Discovery</h6>
-            </div>
-          </div>
-          <div class="vline"></div>
-          <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
-            <p class="case-subsection-title">Secondary Research</p>
-            <p><a href="https://link.springer.com/content/pdf/10.1007/BF01054464.pdf" target="_blank">Retting et al.</a> suggests that in dispute processes such as in divorce proceedings, individuals are primarily concerned with fair procedures and <strong>procedural justice</strong>. Elements of procedural justice include exhibiting respect, voice, understanding, neutral decision-making, and helpfulness.</p>
+          <a href="https://www.courtinnovation.org/sites/default/files/documents/P_J_Evaluation.pdf" target="_blank"><p class="case-quote">Procedural justice research has shown that when defendants and litigants perceive the court process to be fair, they are more likely to comply with court orders and to follow the law in the future, <strong>regardless of whether they “win” or “lose” their case.</strong></p></a>
 
-            <a href="https://www.courtinnovation.org/sites/default/files/documents/P_J_Evaluation.pdf" target="_blank"><p class="case-quote">Procedural justice research has shown that when defendants and litigants perceive the court process to be fair, they are more likely to comply with court orders and to follow the law in the future, <strong>regardless of whether they “win” or “lose” their case.</strong></p></a>
+          <p class="">As such, procedural justice was a concept that we constantly used when empathizing with users.</p>
+          <p class="">Needing a better understanding of the current divorce process, we collaborated with a local divorce firm and summarized their divorce process into six steps:</p>
+          <a href="./images/fd/process.jpg" data-toggle="lightbox">
+            <img src="./images/fd/process.jpg" class="img-fluid case-img zoomer" alt="current process image">
+          </a>
 
-            <p class="">As such, procedural justice was a concept that we constantly used when empathizing with users.</p>
-            <p class="">Needing a better understanding of the current divorce process, we collaborated with a local divorce firm and summarized their divorce process into six steps:</p>
-            <a href="./images/fd/process.jpg" data-toggle="lightbox">
-              <img src="./images/fd/process.jpg" class="img-fluid case-img zoomer" alt="current process image">
-            </a>
+          <p>A <a href="https://www.separation.ca/help-centre/separation/importance-of-financial-disclosure/" target="_blank">financial disclosure</a> (second step) is a holistic snapshot of a client's financial situation including assets, liabilities, expenses, etc. It typically involves the help of CDFAs, lawyers, and mediators. This step allows legal proceedings to divide financial components evenly among spouses in a divorce. Our research with the firm suggested that financial disclosure is the most painful step.</p>
 
-            <p>A <a href="https://www.separation.ca/help-centre/separation/importance-of-financial-disclosure/" target="_blank">financial disclosure</a> (second step) is a holistic snapshot of a client's financial situation including assets, liabilities, expenses, etc. It typically involves the help of CDFAs, lawyers, and mediators. This step allows legal proceedings to divide financial components evenly among spouses in a divorce. Our research with the firm suggested that financial disclosure is the most painful step.</p>
+          <div class="py-3"></div>
 
-            <div class="py-3"></div>
+          <p class="case-subsection-title">Competitive Heatmap Analysis</p>
+          <p class="">To understand the legal-tech climate as it pertained to dispute resolution, we analysed eight other competitive solutions.</p>
+          <p class="">We asked several legal professionals from our industry partner to rate each product on various features to formulate a heatmap (darker shades represent higher values).</p>
+          <a href="./images/fd/companalysis.jpg" data-toggle="lightbox">
+            <img src="./images/fd/companalysis.jpg" class="img-fluid case-img zoomer" alt="competitive heatmap image">
+          </a>
 
-            <p class="case-subsection-title">Competitive Heatmap Analysis</p>
-            <p class="">To understand the legal-tech climate as it pertained to dispute resolution, we analysed eight other competitive solutions.</p>
-            <p class="">We asked several legal professionals from our industry partner to rate each product on various features to formulate a heatmap (darker shades represent higher values).</p>
-            <a href="./images/fd/companalysis.jpg" data-toggle="lightbox">
-              <img src="./images/fd/companalysis.jpg" class="img-fluid case-img zoomer" alt="competitive heatmap image">
-            </a>
-
-            <p class="">There seemed to be a lack of affordable solutions that addressed financial disclosure document generation, professional collaboration, and client experience management.</p>
-          </div>
+          <p class="">There seemed to be a lack of affordable solutions that addressed financial disclosure document generation, professional collaboration, and client experience management.</p>
         </div>
       </div>
 
-      <div class="case-section">
+      <div class="case-section" id="analysis">
         <div class="case-section-intro">
           <h3 class="case-section-title">Understanding the User</h3>
+          <div class="thinline"></div>
           <p class="case-section-desc">The core principle of user-centered design is involving the user within every part of the process. Developing empathy for our users as opposed to making assumptions allows us to determine the direction of our solution and to clarify what our users need throughout the process.</p>
-          <div class="py-3"></div>
         </div>
+        <div class="case-section-content">
 
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-lg-1">
-            <div class="case-section-side hide">
-              <h6 class="case-side-text">User Analysis</h6>
-            </div>
-          </div>
-          <div class="vline"></div>
-          <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
+          <p class="case-subsection-title">Representative Personas</p>
+          <p>We observed numerous phone calls and other interactions between the industry partner's professionals and their clients for a period of over two weeks (with the consent of both parties).</p>
+          <p>For more context, we interviewed the professionals regarding each client case to create personas.</p>
+          <a href="./images/fd/propersona.jpg" data-toggle="lightbox">
+            <img src="./images/fd/propersona.jpg" class="img-fluid case-img zoomer" alt="professional persona image">
+          </a>
+          <a href="./images/fd/clientpersona.jpg" data-toggle="lightbox">
+            <img src="./images/fd/clientpersona.jpg" class="img-fluid case-img zoomer" alt="professional persona image">
+          </a>
+          <div class="py-3"></div>
 
-            <p class="case-subsection-title">Representative Personas</p>
-            <p>We observed numerous phone calls and other interactions between the industry partner's professionals and their clients for a period of over two weeks (with the consent of both parties).</p>
-            <p>For more context, we interviewed the professionals regarding each client case to create personas.</p>
-            <a href="./images/fd/propersona.jpg" data-toggle="lightbox">
-              <img src="./images/fd/propersona.jpg" class="img-fluid case-img zoomer" alt="professional persona image">
-            </a>
-            <a href="./images/fd/clientpersona.jpg" data-toggle="lightbox">
-              <img src="./images/fd/clientpersona.jpg" class="img-fluid case-img zoomer" alt="professional persona image">
-            </a>
-            <div class="py-3"></div>
-
-            <p class="case-subsection-title">Empathy Maps</p>
-            <p>Following the development of our two personas, we also used the observed interactions of the professionals and their clients to build empathy maps. This forces us to overcome personal biases and perceptions to map how our users actually felt during this process.</p>
-            <a href="./images/fd/proempathymap.jpg" data-toggle="lightbox">
-              <img src="./images/fd/proempathymap.jpg" class="img-fluid zoomer" alt="pro empathymap image">
-            </a>
-            <div class="py-3"></div>
-            <p>As for the client in particular, we specifically studied the <a href="https://www.cleverism.com/understanding-kubler-ross-change-curve/" target="_blank">Kübler-Ross Change Curve</a> to understand the emotional impact of sudden, unwanted change (such as in the case of separation).</p>
-            <a href="./images/fd/clientempathymap.jpg" data-toggle="lightbox">
-              <img src="./images/fd/clientempathymap.jpg" class="img-fluid zoomer" alt="client empathymap image">
-            </a>
-          </div>
+          <p class="case-subsection-title">Empathy Maps</p>
+          <p>Following the development of our two personas, we also used the observed interactions of the professionals and their clients to build empathy maps. This forces us to overcome personal biases and perceptions to map how our users actually felt during this process.</p>
+          <a href="./images/fd/proempathymap.jpg" data-toggle="lightbox">
+            <img src="./images/fd/proempathymap.jpg" class="img-fluid zoomer" alt="pro empathymap image">
+          </a>
+          <div class="py-3"></div>
+          <p>As for the client in particular, we specifically studied the <a href="https://www.cleverism.com/understanding-kubler-ross-change-curve/" target="_blank">Kübler-Ross Change Curve</a> to understand the emotional impact of sudden, unwanted change (such as in the case of separation).</p>
+          <a href="./images/fd/clientempathymap.jpg" data-toggle="lightbox">
+            <img src="./images/fd/clientempathymap.jpg" class="img-fluid zoomer" alt="client empathymap image">
+          </a>
         </div>
       </div>
 
-      <div class="case-section">
+      <div class="case-section" id="ideation">
         <div class="case-section-intro">
           <h3 class="case-section-title">Analysing the Scope</h3>
+          <div class="thinline"></div>
           <p class="case-section-desc">In order to define the project scope, it is vital that we combine our understanding of the project scope and our empathy with our users. We used the personas we created in the previous step to define their needs, addressed these needs by ideating product features, and mapped the user flow.</p>
-          <div class="py-3"></div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-lg-1">
-            <div class="case-section-side hide">
-              <h6 class="case-side-text">Ideation</h6>
+        <div class="case-section-content">
+        <p class="case-subsection-title">User Needs</p>
+          <p>By empathizing with our users, we were able to define their unique needs. In summary:</p>
+          <div class="user-quote">
+            <h1 class="quotation-mark">“</h1>
+            <blockquote class="mb-3 quote">
+              <h6>I need to <strong>gather client documents on a centralized platform</strong> so I don't have to worry about printing / courier expenses, as well as losing important documents.</h6>
+              <h6>I need to <strong>connect with other professionals</strong> so that I can collaborate and share client documents (with their consent) on an as-needed basis.</h6>
+              <h6>I need to <strong>monitor the progress</strong> of client's financial disclosures so I can offer help if they get stuck or when they need motivation.</h6>
+              <h6>I need to <strong>have legal forms properly filled based on the disclosure</strong> so that I don't need to waste the client's money and my time redundantly filling it myself.</h6>
+            </blockquote>
+            <div class="d-flex align-items-center vcard">
+              <figure class="mb-0 mr-3">
+                <img src="images/fd/laura.jpg" alt="user" class="img-fluid" alt="laura image">
+              </figure>
+              <div class="vcard-text">
+                <span class="d-block">Laura Mackenzie</span>
+                <span class="position">Family Lawyer</span>
+              </div>
             </div>
           </div>
-          <div class="vline"></div>
-          <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
-          <p class="case-subsection-title">User Needs</p>
-            <p>By empathizing with our users, we were able to define their unique needs. In summary:</p>
-            <div class="user-quote">
-              <h1 class="quotation-mark">“</h1>
-              <blockquote class="mb-3 quote">
-                <h6>I need to <strong>gather client documents on a centralized platform</strong> so I don't have to worry about printing / courier expenses, as well as losing important documents.</h6>
-                <h6>I need to <strong>connect with other professionals</strong> so that I can collaborate and share client documents (with their consent) on an as-needed basis.</h6>
-                <h6>I need to <strong>monitor the progress</strong> of client's financial disclosures so I can offer help if they get stuck or when they need motivation.</h6>
-                <h6>I need to <strong>have legal forms properly filled based on the disclosure</strong> so that I don't need to waste the client's money and my time redundantly filling it myself.</h6>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/fd/laura.jpg" alt="user" class="img-fluid" alt="laura image">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Laura Mackenzie</span>
-                  <span class="position">Family Lawyer</span>
-                </div>
+          <div class="user-quote">
+            <h1 class="quotation-mark">“</h1>
+            <blockquote class="mb-3 quote">
+              <h6>I need to <strong>convenient way to have my lawyer validate my documents</strong> so that I don't have to ship those documents to her, only to have it sent back.</h6>
+              <h6>I need to <strong>understand complicated legal and financial terms</strong> so that I can know exactly what to do at any given time without feeling overwhelmed.</h6>
+              <h6>I need to <strong>constantly see my own progress</strong> so that I can know exactly where I am and how much work is left before my disclosure is completed.​​</h6>
+              <h6>I need to <strong>gather old documents to prove my financial situation</strong> rather than going to banks and other places and collecting everything myself.</h6>
+            </blockquote>
+            <div class="d-flex align-items-center vcard">
+              <figure class="mb-0 mr-3">
+                <img src="images/fd/charlie.jpg" alt="user" class="img-fluid" alt="charlie image">
+              </figure>
+              <div class="vcard-text">
+                <span class="d-block">Charlie Hartridge</span>
+                <span class="position">Divorce Client</span>
               </div>
             </div>
-            <div class="user-quote">
-              <h1 class="quotation-mark">“</h1>
-              <blockquote class="mb-3 quote">
-                <h6>I need to <strong>convenient way to have my lawyer validate my documents</strong> so that I don't have to ship those documents to her, only to have it sent back.</h6>
-                <h6>I need to <strong>understand complicated legal and financial terms</strong> so that I can know exactly what to do at any given time without feeling overwhelmed.</h6>
-                <h6>I need to <strong>constantly see my own progress</strong> so that I can know exactly where I am and how much work is left before my disclosure is completed.​​</h6>
-                <h6>I need to <strong>gather old documents to prove my financial situation</strong> rather than going to banks and other places and collecting everything myself.</h6>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/fd/charlie.jpg" alt="user" class="img-fluid" alt="charlie image">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Charlie Hartridge</span>
-                  <span class="position">Divorce Client</span>
-                </div>
-              </div>
-            </div>
+          </div>
             <p class="case-subsection-title">Primary Features</p>
             <p>Our team collaboratively brainstormed primary features to address the needs of both our user types. We specified primary features that would be valuable to the professional, their client, and the efficiency of the process for both.</p>
             <div class="py-3"></div>
@@ -305,130 +291,110 @@
         </div>
       </div>
 
-      <div class="case-section">
+      <div class="case-section" id="prototyping">
         <div class="case-section-intro">
           <h3 class="case-section-title">Designing the Solution</h3>
+          <div class="thinline"></div>
           <p class="case-section-desc">Now that we specified potential solutions and goals, we quickly developed prototypes to visualize and quantify the experience we were proposing. This also allowed us to explore the information architecture and the sequential process of each task in greater detail.</p>
-          <div class="py-3"></div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-lg-1">
-            <div class="case-section-side hide">
-              <h6 class="case-side-text">Prototyping</h6>
-            </div>
-          </div>
-          <div class="vline"></div>
-          <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
 
-            <p class="case-subsection-title">Wireframes</p>
-            <p>We specifically used the <a href="https://www.growthengineering.co.uk/bj-foggs-behavior-model/" target="_blank">Fogg-Behavioral model</a> and <a href="https://www.interaction-design.org/literature/article/hick-s-law-making-the-choice-easier-for-users" target="blank">Hick's law</a> for understanding how to increase client motivation for the completion of some more difficult tasks. We applied our understanding of these theories to develop wireframes for the platform and for particular interactions.</p>
-            <a href="./images/fd/wireframes.jpg" data-toggle="lightbox">
-              <img src="./images/fd/wireframes.jpg" class="img-fluid case-img zoomer" alt="wireframes image">
-            </a>
-            <div class="py-1"></div>
-            <p class="case-subsection-title">Lean Evaluation</p>
-            <p>We gathered feedback regarding the wireframes through client-walkthroughs and interviews with professionals from our industry partner. With their experience conducting financial disclosures, they had excellent feedback regarding our innovation and insight into how a client might feel.</p>
+        <div class="case-section-content">
 
-            <p><strong>What Went Well</strong><br>
-            Our participants liked the idea of simplifying the process to the client in steps and the way progress was always visualized in the interface. They especially liked that users had the option to do the screening interview themselves or with a professional leading them. Finally, they found that autofilling information from the disclosure into legal documents was extremely valuable.</p>
+          <p class="case-subsection-title">Wireframes</p>
+          <p>We specifically used the <a href="https://www.growthengineering.co.uk/bj-foggs-behavior-model/" target="_blank">Fogg-Behavioral model</a> and <a href="https://www.interaction-design.org/literature/article/hick-s-law-making-the-choice-easier-for-users" target="blank">Hick's law</a> for understanding how to increase client motivation for the completion of some more difficult tasks. We applied our understanding of these theories to develop wireframes for the platform and for particular interactions.</p>
+          <a href="./images/fd/wireframes.jpg" data-toggle="lightbox">
+            <img src="./images/fd/wireframes.jpg" class="img-fluid case-img zoomer" alt="wireframes image">
+          </a>
+          <div class="py-1"></div>
+          <p class="case-subsection-title">Lean Evaluation</p>
+          <p>We gathered feedback regarding the wireframes through client-walkthroughs and interviews with professionals from our industry partner. With their experience conducting financial disclosures, they had excellent feedback regarding our innovation and insight into how a client might feel.</p>
 
-            <p><strong>What Could be Improved</strong><br>
-            Moving forward, we needed to address user's concerns about integrating a client management system into the platform for multiple disclosures, the client's ability to edit and see submitted documents, and the professional's ability to keep track of related activities by collaborators.</p>
-            <div class="py-3"></div>
+          <p><strong>What Went Well</strong><br>
+          Our participants liked the idea of simplifying the process to the client in steps and the way progress was always visualized in the interface. They especially liked that users had the option to do the screening interview themselves or with a professional leading them. Finally, they found that autofilling information from the disclosure into legal documents was extremely valuable.</p>
 
-            <p class="case-subsection-title">User Scenario Prototyping</p>
-            <p>After lean evaluation, we jumped right into high-fidelity prototyping to support the team's agile development process. We specifically focused on particular user scenarios.</p>
-            <div class="py-2"></div>
-            <a href="./images/fd/hifi.jpg" class="" data-toggle="lightbox">
-              <img src="./images/fd/hifi.jpg" class="img-fluid zoomer" alt="redesigns image">
-            </a>
-            <div class="py-3 hide"></div>
-            <p class="hide">Displayed below are some user scenarios from the perspective of the client: <br>
-            <strong>Click to interact with the prototype!</strong></p>
-            <div class="py-2 hide"></div>
+          <p><strong>What Could be Improved</strong><br>
+          Moving forward, we needed to address user's concerns about integrating a client management system into the platform for multiple disclosures, the client's ability to edit and see submitted documents, and the professional's ability to keep track of related activities by collaborators.</p>
+          <div class="py-3"></div>
 
-            <iframe sandbox="allow-same-origin allow-scripts" class="hide" width="100%" height="700" src="https://invis.io/UJVJTNRMXKN" frameborder="0" allowfullscreen></iframe>
+          <p class="case-subsection-title">User Scenario Prototyping</p>
+          <p>After lean evaluation, we jumped right into high-fidelity prototyping to support the team's agile development process. We specifically focused on particular user scenarios.</p>
+          <div class="py-2"></div>
+          <a href="./images/fd/hifi.jpg" class="" data-toggle="lightbox">
+            <img src="./images/fd/hifi.jpg" class="img-fluid zoomer" alt="redesigns image">
+          </a>
+          <div class="py-3 hide"></div>
+          <p class="hide">Displayed below are some user scenarios from the perspective of the client: <br>
+          <strong>Click to interact with the prototype!</strong></p>
+          <div class="py-2 hide"></div>
 
-          </div>
+          <iframe sandbox="allow-same-origin allow-scripts" class="hide" width="100%" height="750" src="https://invis.io/UJVJTNRMXKN" frameborder="0" allowfullscreen></iframe>
+
         </div>
       </div>
 
-      <div class="case-section">
+      <div class="case-section" id="evaluation">
         <div class="case-section-intro">
           <h3 class="case-section-title">Verifying the Efficacy</h3>
+          <div class="thinline"></div>
           <p class="case-section-desc">Before the next design iteration, it's imperative that we conduct summative research to examine our progress and the effectiveness of our prototype. We used the <a href="http://www.id-book.com/fourthedition/downloads/ID3Chapter13Anevaluationframework.pdf" target="_blank">DECIDE framework</a> and elements of procedural justice to validate any of our previous assumptions and examine the efficacy of the MVP.</p>
-          <div class="py-3"></div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-lg-1">
-            <div class="case-section-side hide">
-              <h6 class="case-side-text">Evaluation</h6>
-            </div>
-          </div>
-          <div class="vline"></div>
-          <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
+        <div class="case-section-content">
 
-            <p class="case-subsection-title">Focus Group Role-Play Study</p>
-            <p class="">We gathered five family law professionals from our industry partner as well as five participants who approximately fit the demographic of the client persona and had no experience with the financial disclosure process.</p>
+          <p class="case-subsection-title">Focus Group Role-Play Study</p>
+          <p class="">We gathered five family law professionals from our industry partner as well as five participants who approximately fit the demographic of the client persona and had no experience with the financial disclosure process.</p>
 
-            <p class="">To introduce the platform to the focus group, we asked both persona types to role-play a professional-client relationship and complete a financial disclosure with data provided via an information package. This included navigating the dashboard, as well as completing a client interview, checklist, file validation, and automatic legal document generation.</p>
+          <p class="">To introduce the platform to the focus group, we asked both persona types to role-play a professional-client relationship and complete a financial disclosure with data provided via an information package. This included navigating the dashboard, as well as completing a client interview, checklist, file validation, and automatic legal document generation.</p>
 
-            <p class="">After making observations and a brief feedback discussion, we also asked the participant to complete the <a href="https://measuringu.com/sus/" target="_blank">System Usability Scale</a>, a peer-reviewed and standardized measurement of usability where a score of <strong>68</strong> is considered average.</p>
-            <p>Our mean SUS score was <strong>66</strong>, which was slightly below average. We believe our score was slightly lower than average given the complexity of our application; we used the data collected during evaluation to plan and prioritize a platform redesign.</p>
+          <p class="">After making observations and a brief feedback discussion, we also asked the participant to complete the <a href="https://measuringu.com/sus/" target="_blank">System Usability Scale</a>, a peer-reviewed and standardized measurement of usability where a score of <strong>68</strong> is considered average.</p>
+          <p>Our mean SUS score was <strong>66</strong>, which was slightly below average. We believe our score was slightly lower than average given the complexity of our application; we used the data collected during evaluation to plan and prioritize a platform redesign.</p>
 
-            <p class="">Links to Research: <a href="./files/fdDECIDE.pdf" target="_blank">DECIDE Outline</a> | <a href="./files/fdInfo.pdf" target="_blank">Information Page</a> | <a href="./files/fdSUS.pdf" target="_blank">Blank SUS Form</a></p>
+          <p class="">Links to Research: <a href="./files/fdDECIDE.pdf" target="_blank">DECIDE Outline</a> | <a href="./files/fdInfo.pdf" target="_blank">Information Page</a> | <a href="./files/fdSUS.pdf" target="_blank">Blank SUS Form</a></p>
 
-            <div class="py-3"></div>
+          <div class="py-3"></div>
 
-            <p class="case-subsection-title">Usability Analysis</p>
-            <p class="">An expert review of our platform was conducted using <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">Nielsen's 10 usability heuristics</a>.</p>
-            <a href="./images/fd/plot.jpg" data-toggle="lightbox">
-              <img src="./images/fd/plot.jpg" class="img-fluid case-img zoomer" alt="heuristic plot image">
-            </a>
+          <p class="case-subsection-title">Usability Analysis</p>
+          <p class="">An expert review of our platform was conducted using <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">Nielsen's 10 usability heuristics</a>.</p>
+          <a href="./images/fd/plot.jpg" data-toggle="lightbox">
+            <img src="./images/fd/plot.jpg" class="img-fluid case-img zoomer" alt="heuristic plot image">
+          </a>
 
-            <p class="">After noting examples of heuristic support, we specified the source of specific usability issues.</p>
-            <p>Notably, we discovered that it was occasionally unclear what the user was supposed to do and some visual metaphors were unintuitive. Based on my <a href="./files/CFUX.pdf" target="_blank">previous research</a> and given the typical age and emotional state of the clients, we decided to rely more on textual and explicit descriptions.</p>
-          </div>
+          <p class="">After noting examples of heuristic support, we specified the source of specific usability issues.</p>
+          <p>Notably, we discovered that it was occasionally unclear what the user was supposed to do and some visual metaphors were unintuitive. Based on my <a href="./files/CFUX.pdf" target="_blank">previous research</a> and given the typical age and emotional state of the clients, we decided to rely more on textual and explicit descriptions.</p>
         </div>
       </div>
 
-      <div class="case-section">
+      <div class="case-section" id="iteration">
         <div class="case-section-intro">
-          <h3 class="case-section-title">Platform Redesign</h3>
+          <h3 class="case-section-title">Applying the Learnings</h3>
+          <div class="thinline"></div>
           <p class="case-section-desc">Using the data collected during the evaluation stage, we organized our revisions according to <a href="https://www.productplan.com/glossary/moscow-prioritization/" target="_blank">MoSCoW prioritization analysis</a> and restructured our high-fidelity designs.</p>
         </div>
 
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-lg-1">
-            <div class="case-section-side hide">
-              <h6 class="case-side-text">Iteration</h6>
-            </div>
-          </div>
-          <div class="vline"></div>
-          <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
-            <p class="case-subsection-title">Style Guide</p>
-            <img src="./images/fd/style.jpg" class="img-fluid case-img" alt="style guide image">
-            <div class="py-3"></div>
-            <p class="case-subsection-title">Second Iteration</p>
-            <p>Using the feedback from our evaluation session, we worked to simplify the platform further and make the interface more intuitive.</p>
-            <p>One of our primary focuses was on redesigning the checklist portion - we organized the UI according to tasks that the client needs to do, tasks that the professional needs to do, and what has been completed. This highlights what the user needs to complete at any given time.</p>
-            <div class="py-2"></div>
-            <a href="./images/fd/redesign.jpg" class="" data-toggle="lightbox">
-              <img src="./images/fd/redesign.jpg" class="img-fluid zoomer" alt="redesigns image">
-            </a>
-            <div class="py-3"></div>
-            <p class="">Lean evaluation with of the redesign showed that we improved the platform's SUS score to <strong>71</strong>, where the average standardized SUS score is <strong>68</strong>. Subsequent focus group discussions showed that the platform showed improvement in terms of the overall quality of experience as well.</p>
-            <p class="hide"><strong>Interact with the prototype to see the platform from the perspective of a family law professional!</strong></p>
-            <div class="py-2 hide"></div>
-            <iframe sandbox="allow-same-origin allow-scripts" class="hide" width="100%" height="750" src="https://projects.invisionapp.com/share/4TVJTSHNMPJ#/screens" frameborder="0" allowfullscreen></iframe>
-          </div>
+
+        <div class="case-section-content">
+          <p class="case-subsection-title">Style Guide</p>
+          <img src="./images/fd/style.jpg" class="img-fluid case-img" alt="style guide image">
+          <div class="py-3"></div>
+          <p class="case-subsection-title">Second Iteration</p>
+          <p>Using the feedback from our evaluation session, we worked to simplify the platform further and make the interface more intuitive.</p>
+          <p>One of our primary focuses was on redesigning the checklist portion - we organized the UI according to tasks that the client needs to do, tasks that the professional needs to do, and what has been completed. This highlights what the user needs to complete at any given time.</p>
+          <div class="py-2"></div>
+          <a href="./images/fd/redesign.jpg" class="" data-toggle="lightbox">
+            <img src="./images/fd/redesign.jpg" class="img-fluid zoomer" alt="redesigns image">
+          </a>
+          <div class="py-3"></div>
+          <p class="">Lean evaluation with of the redesign showed that we improved the platform's SUS score to <strong>71</strong>, where the average standardized SUS score is <strong>68</strong>. Subsequent focus group discussions showed that the platform showed improvement in terms of the overall quality of experience as well.</p>
+          <p class="hide"><strong>Interact with the prototype to see the platform from the perspective of a family law professional!</strong></p>
+          <div class="py-2 hide"></div>
+          <iframe sandbox="allow-same-origin allow-scripts" class="hide" width="100%" height="777" src="https://projects.invisionapp.com/share/4TVJTSHNMPJ#/screens" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
 
       <div class="case-reflection" id="reflection">
-        <h3 class="case-reflection-title">Reflection</h3>
+        <h3 class="case-section-title">Reflection</h3>
+        <div class="thinline"></div>
         <p>According to a <a href="https://docs.google.com/spreadsheets/d/1qIECXFXO7Hcfdk81L-ysmguwKzyEm4jj5PpoXhwO2aA/edit?usp=sharing" target="_blank">cost evaluation</a> based on competitive analyses, this platform can help the user save <strong>86%</strong> of monetary expenses compared to the traditional process. By the end of this project, this platform also secured an official partnership with the <a href="https://www.oafm.on.ca/" target="_blank">Ontario Association for Family Mediation</a>. Along the way, I learned three key things that will extend to my future work:</p>
         <div class="py-2"></div>
         <p class="case-subsection-title">Keep it Quick, Keep it Agile</p>

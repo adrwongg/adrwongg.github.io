@@ -77,6 +77,17 @@
         </div>
     </nav>
 
+    <div class="scroll-line tabhide hide"></div>
+    <div class="section-nav tabhide hide">
+      <ul class="">
+        <li class="nav-disc"><a href="#discovery">Discovery</a></li>
+        <li class="nav-ana"><a href="#analysis">User Analysis</a></li>
+        <li class="nav-idea"><a href="#ideation">Ideation</a></li>
+        <li class="nav-proto"><a href="#prototyping">Prototyping</a></li>
+        <li class="nav-eval"><a href="#evaluation">Evaluation</a></li>
+      </ul>
+    </div>
+
     <!-- CASE -->
     <section class="case container justify-content-center align-items-center" id="about">
       <div class="text-center case-title full-screen">
@@ -88,7 +99,7 @@
 
       <img src="./images/obmedia/visitor-hero.jpg" class="img-fluid case-hero" alt="avail hero image">
 
-      <div class="row case-section justify-content-between align-items-center">
+      <div class="row justify-content-between align-items-center">
         <div class="col-sm-5 col-md-5 col-lg-5 case-brief">
           <h3 class="mb-3">Problem Statement</h3>
           <p class="">Given that it covers a specialized niche, <i>The Museum of Obsolete Media</i> struggles with providing a uniform experience for its audience.</p>
@@ -124,395 +135,356 @@
         <h6 class="">How would you describe these media formats if you found them in your attic? <br>Black tubes or Pathé Cylinders/Amberol Records?</h6>
       </div>
 
-      <div class="case-section">
+      <div class="case-section" id="discovery">
         <div class="case-section-intro">
-          <h3 class="case-section-title">Defining the Problem <span class="hide">Space</span></h3>
+          <h3 class="case-section-title">Defining the Problem</h3>
+          <div class="thinline"></div>
           <p class="case-section-desc"><i>The Museum of Obsolete Media</i> is currently a content-based digital museum represented by an online exhibit. After a preliminary literature review, we wanted to analyse the website in-depth to find any areas for potential improvement. These were the key insights in our discovery process.</p>
-          <div class="py-3"></div>
         </div>
+        <div class="case-section-content">
+          <p class="case-subsection-title">Content Inventory</p>
+          <p class="">To analyse the website, we initially conducted a content inventory using Content Auditor.</p>
+          <p class="">In total, Content Auditor crawled <strong>93</strong> pages. This is a reasonable sample considering the size of the website. Moreover, many pages within the website has similar content, format, and data types. As such, we employed the <a href="https://books.google.ca/books?id=2d2Ry2hZc2MC&pg=PA241&lpg=PA241&dq=noah%27s+ark+approach+content+inventory&source=bl&ots=onihvo-Nzf&sig=ACfU3U2woNay5Ik5DTkVTJSrRB8AJQIfOA&hl=en&sa=X&ved=2ahUKEwirpo6Rv8_mAhWPnOAKHVePC8cQ6AEwAHoECAkQAQ#v=onepage&q=noah's%20ark%20approach%20content%20inventory&f=false" target="_blank">Noah’s Ark approach.</a></p>
 
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-lg-1">
-            <div class="case-section-side hide">
-              <h6 class="case-side-text">Discovery</h6>
-            </div>
-          </div>
-          <div class="vline"></div>
-          <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
+          <p class="">Among our main findings, we discovered that the average reading grade was <strong>13.4</strong> and the average reading ease was <strong>46.4</strong> per page. According to <a href="https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests" target="_blank">Flesch-Kincaid readability tests</a>, this is almost double the reading difficulty that is recommended.</p>
 
-            <p class="case-subsection-title">Content Inventory</p>
-            <p class="">To analyse the website, we initially conducted a content inventory using Content Auditor.</p>
-            <p class="">In total, Content Auditor crawled <strong>93</strong> pages. This is a reasonable sample considering the size of the website. Moreover, many pages within the website has similar content, format, and data types. As such, we employed the <a href="https://books.google.ca/books?id=2d2Ry2hZc2MC&pg=PA241&lpg=PA241&dq=noah%27s+ark+approach+content+inventory&source=bl&ots=onihvo-Nzf&sig=ACfU3U2woNay5Ik5DTkVTJSrRB8AJQIfOA&hl=en&sa=X&ved=2ahUKEwirpo6Rv8_mAhWPnOAKHVePC8cQ6AEwAHoECAkQAQ#v=onepage&q=noah's%20ark%20approach%20content%20inventory&f=false" target="_blank">Noah’s Ark approach.</a></p>
+          <a href="./images/obmedia/barcharts.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/barcharts.jpg" class="img-fluid zoomer" alt="bar chart image">
+          </a>
 
-            <p class="">Among our main findings, we discovered that the average reading grade was <strong>13.4</strong> and the average reading ease was <strong>46.4</strong> per page. According to <a href="https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests" target="_blank">Flesch-Kincaid readability tests</a>, this is almost double the reading difficulty that is recommended.</p>
+          <p>Although users may be professionals or hobbyists with experience in obsolete media, new users may find this reading difficulty troubling. Ad-hoc analysis seems to show that this difficulty is distributed across the website relatively equally.</p>
 
-            <a href="./images/obmedia/barcharts.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/barcharts.jpg" class="img-fluid zoomer" alt="bar chart image">
-            </a>
+          <p>Aside from content difficulty, we also found accessibility, SEO, and loading time issues. For example, there were <strong>1640</strong> broken links, <strong>98%</strong> of images had missing alt texts, and <strong>12</strong> pages had missing meta discriptions.</p>
 
-            <p>Although users may be professionals or hobbyists with experience in obsolete media, new users may find this reading difficulty troubling. Ad-hoc analysis seems to show that this difficulty is distributed across the website relatively equally.</p>
-
-            <p>Aside from content difficulty, we also found accessibility, SEO, and loading time issues. For example, there were <strong>1640</strong> broken links, <strong>98%</strong> of images had missing alt texts, and <strong>12</strong> pages had missing meta discriptions.</p>
-
-            <p>Please visit the <a href="https://contentauditor.onpointsuite.ca/Site/PublicReport?hash=9RbGNAWgtz8b-GyM5cHe4w2" target="_blank">official report</a> for more details.</p>
+          <p>Please visit the <a href="https://contentauditor.onpointsuite.ca/Site/PublicReport?hash=9RbGNAWgtz8b-GyM5cHe4w2" target="_blank">official report</a> for more details.</p>
 
 
-            <div class="py-3"></div>
-            <p class="case-subsection-title">Current IA Schematic Diagram</p>
-            <p>After our content inventory, we created a preliminary IA schematic diagram to outline the current status of the web museum.</p>
+          <div class="py-3"></div>
+          <p class="case-subsection-title">Current IA Schematic Diagram</p>
+          <p>After our content inventory, we created a preliminary IA schematic diagram to outline the current status of the web museum.</p>
 
-            <div class="py-2"></div>
-            <a href="./images/obmedia/oldIA.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/oldIA.jpg" class="img-fluid zoomer" alt="current IA image">
-            </a>
-            <div class="py-4"></div>
+          <div class="py-2"></div>
+          <a href="./images/obmedia/oldIA.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/oldIA.jpg" class="img-fluid zoomer" alt="current IA image">
+          </a>
+          <div class="py-4"></div>
 
-            <p>In the following sections, we subsequently analysed the website in greater detail.</p>
+          <p>In the following sections, we subsequently analysed the website in greater detail.</p>
 
-            <div class="py-3"></div>
+          <div class="py-3"></div>
 
-            <p class="case-subsection-title">Organizational Analysis</p>
-            <p class="">In a top-down way, the primary and secondary navigation links within the site are organized based on topical/categorical differences. When navigating within these links, individual artifacts are divided according to chronological differences.</p>
-            <p>This may prove to be confusing for first-time visitors. Introducing bottom-up links on the front page may help new users understand where to start.</p>
+          <p class="case-subsection-title">Organizational Analysis</p>
+          <p class="">In a top-down way, the primary and secondary navigation links within the site are organized based on topical/categorical differences. When navigating within these links, individual artifacts are divided according to chronological differences.</p>
+          <p>This may prove to be confusing for first-time visitors. Introducing bottom-up links on the front page may help new users understand where to start.</p>
 
-            <div class="py-2"></div>
-            <a href="./images/obmedia/buttomupsug.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/buttomupsug.jpg" class="img-fluid outlined-img zoomer" alt="bottom-up suggestions image">
-            </a>
-            <div class="py-3"></div>
+          <div class="py-2"></div>
+          <a href="./images/obmedia/buttomupsug.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/buttomupsug.jpg" class="img-fluid outlined-img zoomer" alt="bottom-up suggestions image">
+          </a>
+          <div class="py-3"></div>
 
-            <div class="py-3"></div>
-            <p class="case-subsection-title">Labeling Analysis</p>
-            <p>The labelling systems are generally helpful throughout the website, though may sometimes be inconsistent. From a professional user’s perspective, these labels may seem logically indexed and are arguably easy to browse. Unfortunately, a new user or a novice hobbyist may not necessarily feel the same way.</p> 
-            <p>Suggesting similar items may help the user understand these labels with the use of bottom-up architecture; specifically, popular tags, related tags, and similar formats.</p>
+          <div class="py-3"></div>
+          <p class="case-subsection-title">Labeling Analysis</p>
+          <p>The labelling systems are generally helpful throughout the website, though may sometimes be inconsistent. From a professional user’s perspective, these labels may seem logically indexed and are arguably easy to browse. Unfortunately, a new user or a novice hobbyist may not necessarily feel the same way.</p> 
+          <p>Suggesting similar items may help the user understand these labels with the use of bottom-up architecture; specifically, popular tags, related tags, and similar formats.</p>
 
-            <div class="py-2"></div>
-            <a href="./images/obmedia/tags.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/tags.jpg" class="img-fluid outlined-img zoomer" alt="tag system image">
-            </a>
-            <div class="py-3"></div>
+          <div class="py-2"></div>
+          <a href="./images/obmedia/tags.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/tags.jpg" class="img-fluid outlined-img zoomer" alt="tag system image">
+          </a>
+          <div class="py-3"></div>
 
-            <div class="py-3"></div>
-            <p class="case-subsection-title">Navigation Analysis</p>
-            <p>The persistence of the navigation bar implies that it is meant to be used to navigate the website at a top-down, global level. However, it does not indicate where the user is at the current moment. This point is further supported by the lack of breadcrumb trails. The site seems to rely heavily on supplementary navigation systems in deeper pages.</p>
+          <div class="py-3"></div>
+          <p class="case-subsection-title">Navigation Analysis</p>
+          <p>The persistence of the navigation bar implies that it is meant to be used to navigate the website at a top-down, global level. However, it does not indicate where the user is at the current moment. This point is further supported by the lack of breadcrumb trails. The site seems to rely heavily on supplementary navigation systems in deeper pages.</p>
 
-            <div class="py-2"></div>
-            <a href="./images/obmedia/nav.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/nav.jpg" class="img-fluid outlined-img zoomer" alt="navbar image">
-            </a>
-            <div class="py-3"></div>
+          <div class="py-2"></div>
+          <a href="./images/obmedia/nav.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/nav.jpg" class="img-fluid outlined-img zoomer" alt="navbar image">
+          </a>
+          <div class="py-3"></div>
 
-            <div class="py-3"></div>
-            <p class="case-subsection-title">Search System Analysis</p>
-            <p>Unfortunately, the search system does not offer the option to specify particular search zones. This may be argued as a reliance on the browsability of the subject hierarchy.</p>
+          <div class="py-3"></div>
+          <p class="case-subsection-title">Search System Analysis</p>
+          <p>Unfortunately, the search system does not offer the option to specify particular search zones. This may be argued as a reliance on the browsability of the subject hierarchy.</p>
 
-            <p>As such, the search bar may be catered specifically to users who can define the information that they want. For the users that can't specify what they're looking for, the search system can be improved in terms of usability.</p>
+          <p>As such, the search bar may be catered specifically to users who can define the information that they want. For the users that can't specify what they're looking for, the search system can be improved in terms of usability.</p>
 
-            <div class="py-2"></div>
-            <a href="./images/obmedia/search.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/search.jpg" class="img-fluid outlined-img zoomer" alt="search image">
-            </a>
-          </div>
+          <div class="py-2"></div>
+          <a href="./images/obmedia/search.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/search.jpg" class="img-fluid outlined-img zoomer" alt="search image">
+          </a>
         </div>
       </div>
 
-      <div class="case-section">
+      <div class="case-section" id="analysis">
         <div class="case-section-intro">
           <h3 class="case-section-title">Understanding the User</h3>
+          <div class="thinline"></div>
           <p class="case-section-desc">Given that obsolete media is a relatively specific niche, we would expect the digital museum to have different kinds of users. Here, we brainstormed different user groups and analysed their interactions while using the current interface in order to identify areas of potential improvement.</p>
-          <div class="py-3"></div>
         </div>
+        <div class="case-section-content">
 
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-lg-1">
-            <div class="case-section-side hide">
-              <h6 class="case-side-text">User Analysis</h6>
+          <p class="case-subsection-title">Defining Target Users</p>
+          <p>Our background research informed our brainstorming sessions where we grouped potential users into four segments according to their level of expertise. Then, we recruited four participants for each level of expertise using a mix of convenience and snowball sampling.</p>
+          <p>The following proto-personas embody the average demographics and characteristics for each of the participants in all four expertise levels.</p>
+          <a href="./images/obmedia/personas1.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/personas1.jpg" class="img-fluid case-img zoomer" alt="first two personas image">
+          </a>
+          <a href="./images/obmedia/personas2.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/personas2.jpg" class="img-fluid case-img zoomer" alt="first two personas image">
+          </a>
+          <div class="py-3"></div>
+
+          <p class="case-subsection-title">Timed Observational Study</p>
+          <p>We asked our representative users to find more information regarding two target items from the website; specifically, magnetic tapes and phonograph discs.</p>
+          <p>We averaged the time they took to find these artifacts and grouped them according to our proto-personas (differing levels of expertise in ascending order).</p>
+          <div class="py-3"></div>
+          <div class="row justify-content-between">
+            <div class="col-sm-6 col-md-3 text-center text-muted ">
+              <h3 class="mb-1 p-font">4m 16s</h3>
+              <p>Stanley</p>
+            </div>
+            <div class="col-sm-6 col-md-3 text-center text-muted ">
+              <h3 class="mb-1 p-font">2m 49s</h3>
+              <p>Eddie</p>
+            </div>
+            <div class="col-sm-6 col-md-3 text-center text-muted ">
+              <h3 class="mb-1 p-font">2m 8s</h3>
+              <p>Debra</p>
+            </div> 
+            <div class="col-sm-6 col-md-3 text-center text-muted ">
+              <h3 class="mb-1 p-font">1m 36s</h3>
+              <p>Jayce</p>
+            </div>           
+          </div>
+          <div class="py-3"></div>
+          <p>We noticed that as was hypothesized, users with greater familiarity with obsolete media took less time to find the two targets.</p>
+          <p>By observing the user's interactions, we also noticed that most of our users used the dropdown menus (top-down IA) to complete the task.</p>
+          <p>The individuals who were most reliant on the search system were the users with the lowest level of expertise, which may have accounted for their increased time of completion and many errors.</p>
+
+          <div class="py-3"></div>
+
+          <p class="case-subsection-title">Semi-Structured Interview</p>
+          <p>After the participants finished the observational study and had some free time to explore the website themselves, we conducted semi-structured interviews.</p>
+          <p>We aggregated their responses and grouped the primary findings according to the four proto-personas meant to represent the four varying levels of media expertise.</p>
+          <div class="user-quote">
+            <h1 class="quotation-mark">“</h1>
+            <blockquote class="mb-3 quote">
+              <h6>There's so much information and the terms are so <strong>hard to understand!</strong></h6>
+              <h6>The two artifacts were pretty <strong>hard to find.</strong></h6>
+              <h6>I think it would help if I <strong>knew what year the items were from</strong>, since everything seems to be organized by their respective years. </h6>
+              <h6>It's also <strong>frustrating</strong> to be looking for something specific, but be bombarded by a bunch of irrelevant links.</h6>
+            </blockquote>
+            <div class="d-flex align-items-center vcard">
+              <figure class="mb-0 mr-3">
+                <img src="images/obmedia/stanley.jpg" alt="user" class="img-fluid">
+              </figure>
+              <div class="vcard-text">
+                <span class="d-block">Stanley Lee</span>
+                <span class="position">Undergraduate Student</span>
+              </div>
             </div>
           </div>
-          <div class="vline"></div>
-          <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
-
-            <p class="case-subsection-title">Defining Target Users</p>
-            <p>Our background research informed our brainstorming sessions where we grouped potential users into four segments according to their level of expertise. Then, we recruited four participants for each level of expertise using a mix of convenience and snowball sampling.</p>
-            <p>The following proto-personas embody the average demographics and characteristics for each of the participants in all four expertise levels.</p>
-            <a href="./images/obmedia/personas1.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/personas1.jpg" class="img-fluid case-img zoomer" alt="first two personas image">
-            </a>
-            <a href="./images/obmedia/personas2.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/personas2.jpg" class="img-fluid case-img zoomer" alt="first two personas image">
-            </a>
-            <div class="py-3"></div>
-
-            <p class="case-subsection-title">Timed Observational Study</p>
-            <p>We asked our representative users to find more information regarding two target items from the website; specifically, magnetic tapes and phonograph discs.</p>
-            <p>We averaged the time they took to find these artifacts and grouped them according to our proto-personas (differing levels of expertise in ascending order).</p>
-            <div class="py-3"></div>
-            <div class="row justify-content-between">
-              <div class="col-sm-6 col-md-3 text-center text-muted ">
-                <h3 class="mb-1 p-font">4m 16s</h3>
-                <p>Stanley</p>
-              </div>
-              <div class="col-sm-6 col-md-3 text-center text-muted ">
-                <h3 class="mb-1 p-font">2m 49s</h3>
-                <p>Eddie</p>
-              </div>
-              <div class="col-sm-6 col-md-3 text-center text-muted ">
-                <h3 class="mb-1 p-font">2m 8s</h3>
-                <p>Debra</p>
-              </div> 
-              <div class="col-sm-6 col-md-3 text-center text-muted ">
-                <h3 class="mb-1 p-font">1m 36s</h3>
-                <p>Jayce</p>
-              </div>           
-            </div>
-            <div class="py-3"></div>
-            <p>We noticed that as was hypothesized, users with greater familiarity with obsolete media took less time to find the two targets.</p>
-            <p>By observing the user's interactions, we also noticed that most of our users used the dropdown menus (top-down IA) to complete the task.</p>
-            <p>The individuals who were most reliant on the search system were the users with the lowest level of expertise, which may have accounted for their increased time of completion and many errors.</p>
-
-            <div class="py-3"></div>
-
-            <p class="case-subsection-title">Semi-Structured Interview</p>
-            <p>After the participants finished the observational study and had some free time to explore the website themselves, we conducted semi-structured interviews.</p>
-            <p>We aggregated their responses and grouped the primary findings according to the four proto-personas meant to represent the four varying levels of media expertise.</p>
-            <div class="user-quote">
-              <h1 class="quotation-mark">“</h1>
-              <blockquote class="mb-3 quote">
-                <h6>There's so much information and the terms are so <strong>hard to understand!</strong></h6>
-                <h6>The two artifacts were pretty <strong>hard to find.</strong></h6>
-                <h6>I think it would help if I <strong>knew what year the items were from</strong>, since everything seems to be organized by their respective years. </h6>
-                <h6>It's also <strong>frustrating</strong> to be looking for something specific, but be bombarded by a bunch of irrelevant links.</h6>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/obmedia/stanley.jpg" alt="user" class="img-fluid">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Stanley Lee</span>
-                  <span class="position">Undergraduate Student</span>
-                </div>
+          <div class="user-quote">
+            <h1 class="quotation-mark">“</h1>
+            <blockquote class="mb-3 quote">
+              <h6>I feel like I <strong>need to know a lot about media</strong> before even knowing where to go.</h6>
+              <h6>I had <strong>no idea what the two artifacts even were</strong>, or what they did!</h6>
+              <h6>Some of the <strong>labels were unclear</strong> and I didn't know what to expect.</h6>
+              <h6>I think the collection is huge and the website covers everything (which is good), but I still think <strong>everything could be simplified.</strong></h6>
+            </blockquote>
+            <div class="d-flex align-items-center vcard">
+              <figure class="mb-0 mr-3">
+                <img src="images/obmedia/eddie.jpg" alt="user" class="img-fluid">
+              </figure>
+              <div class="vcard-text">
+                <span class="d-block">Eddie Chapman</span>
+                <span class="position">Museum Enthusiast</span>
               </div>
             </div>
-            <div class="user-quote">
-              <h1 class="quotation-mark">“</h1>
-              <blockquote class="mb-3 quote">
-                <h6>I feel like I <strong>need to know a lot about media</strong> before even knowing where to go.</h6>
-                <h6>I had <strong>no idea what the two artifacts even were</strong>, or what they did!</h6>
-                <h6>Some of the <strong>labels were unclear</strong> and I didn't know what to expect.</h6>
-                <h6>I think the collection is huge and the website covers everything (which is good), but I still think <strong>everything could be simplified.</strong></h6>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/obmedia/eddie.jpg" alt="user" class="img-fluid">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Eddie Chapman</span>
-                  <span class="position">Museum Enthusiast</span>
-                </div>
+          </div>
+          <div class="user-quote">
+            <h1 class="quotation-mark">“</h1>
+            <blockquote class="mb-3 quote">
+              <h6>It's a <strong>great website</strong> for the curator's own personal collection!</h6>
+              <h6>I thought it was <strong>pretty easy</strong> to find the two artifacts.</h6>
+              <h6>The issue is that some formats are <strong>organized inconsistently.</strong></h6>
+              <h6>If I was managing this database, the items wouldn't be categorized by both the decade and the characteristics. <strong>That would be so confusing!</strong></h6>
+            </blockquote>
+            <div class="d-flex align-items-center vcard">
+              <figure class="mb-0 mr-3">
+                <img src="images/obmedia/debra.jpg" alt="user" class="img-fluid">
+              </figure>
+              <div class="vcard-text">
+                <span class="d-block">Debra Turner</span>
+                <span class="position">Media Technician</span>
               </div>
             </div>
-            <div class="user-quote">
-              <h1 class="quotation-mark">“</h1>
-              <blockquote class="mb-3 quote">
-                <h6>It's a <strong>great website</strong> for the curator's own personal collection!</h6>
-                <h6>I thought it was <strong>pretty easy</strong> to find the two artifacts.</h6>
-                <h6>The issue is that some formats are <strong>organized inconsistently.</strong></h6>
-                <h6>If I was managing this database, the items wouldn't be categorized by both the decade and the characteristics. <strong>That would be so confusing!</strong></h6>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/obmedia/debra.jpg" alt="user" class="img-fluid">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Debra Turner</span>
-                  <span class="position">Media Technician</span>
-                </div>
-              </div>
-            </div>
-            <div class="user-quote">
-              <h1 class="quotation-mark">“</h1>
-              <blockquote class="mb-3 quote">
-                <h6>My job is to <strong>know this stuff in my head</strong> already.</h6>
-                <h6>I've used this website before, so <strong>I know where to look.</strong></h6>
-                <h6>Aside from the format's characteristics and decade, it would be awesome if the website even <strong>included the artifact's brand.</strong></h6>
-                <h6>The site would be more useful if they <strong>gave more information about the specific items</strong>, instead of enlarging the picture when I click on it.</h6>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/obmedia/jayce.jpg" alt="user" class="img-fluid">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Jayce Henrique</span>
-                  <span class="position">Media Historian</span>
-                </div>
+          </div>
+          <div class="user-quote">
+            <h1 class="quotation-mark">“</h1>
+            <blockquote class="mb-3 quote">
+              <h6>My job is to <strong>know this stuff in my head</strong> already.</h6>
+              <h6>I've used this website before, so <strong>I know where to look.</strong></h6>
+              <h6>Aside from the format's characteristics and decade, it would be awesome if the website even <strong>included the artifact's brand.</strong></h6>
+              <h6>The site would be more useful if they <strong>gave more information about the specific items</strong>, instead of enlarging the picture when I click on it.</h6>
+            </blockquote>
+            <div class="d-flex align-items-center vcard">
+              <figure class="mb-0 mr-3">
+                <img src="images/obmedia/jayce.jpg" alt="user" class="img-fluid">
+              </figure>
+              <div class="vcard-text">
+                <span class="d-block">Jayce Henrique</span>
+                <span class="position">Media Historian</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="case-section">
+      <div class="case-section" id="ideation">
         <div class="case-section-intro">
           <h3 class="case-section-title">Analysing the Scope</h3>
+          <div class="thinline"></div>
           <p class="case-section-desc">After we developed a better understanding of how our users felt, we needed to specify how we would approach a potential solution. We conducted a card sort study with the previously described proto-personas which informed our proposed revisions and new IA schematic.</p>
-          <div class="py-3"></div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-lg-1">
-            <div class="case-section-side hide">
-              <h6 class="case-side-text">Ideation</h6>
-            </div>
-          </div>
-          <div class="vline"></div>
-          <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
+        <div class="case-section-content">
 
-            <p class="case-subsection-title">Card Sort Study</p>
-            <p>To get a better understanding of how these personas interacted with the digital museum and what we could improve, we conducted a open card sort. We used 30 labels in total, sourced from the current global navigation as well as prominent tags.</p>
-            <p>Two participants were recruited to represent each proto-persona, for a total of eight responses. The following similarity matrix shows a summary of how different labels were grouped.</p>
-            <div class="py-2"></div>
-            <a href="./images/obmedia/simmatrix.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/simmatrix.jpg" class="img-fluid zoomer" alt="similarity matrix image">
-            </a>
-            <div class="py-4"></div>
+          <p class="case-subsection-title">Card Sort Study</p>
+          <p>To get a better understanding of how these personas interacted with the digital museum and what we could improve, we conducted a open card sort. We used 30 labels in total, sourced from the current global navigation as well as prominent tags.</p>
+          <p>Two participants were recruited to represent each proto-persona, for a total of eight responses. The following similarity matrix shows a summary of how different labels were grouped.</p>
+          <div class="py-2"></div>
+          <a href="./images/obmedia/simmatrix.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/simmatrix.jpg" class="img-fluid zoomer" alt="similarity matrix image">
+          </a>
+          <div class="py-4"></div>
 
-            <p>After analysing the card sort, we found consistency between the <i>About</i> and the <i>Media Preservation</i> sections, indicating that the participants were able to intuitively group cards that concerned the metadata of the museum and obsolete media in general.</p>
+          <p>After analysing the card sort, we found consistency between the <i>About</i> and the <i>Media Preservation</i> sections, indicating that the participants were able to intuitively group cards that concerned the metadata of the museum and obsolete media in general.</p>
 
-            <p>However, we found inconsistency within the specific formats in the website, suggesting that the users had a shallow understanding of the particular types of media. This discrepency was even found amoung the participants with the greatest levels of expertise.</p>
+          <p>However, we found inconsistency within the specific formats in the website, suggesting that the users had a shallow understanding of the particular types of media. This discrepency was even found amoung the participants with the greatest levels of expertise.</p>
 
-            <div class="py-3"></div>
+          <div class="py-3"></div>
 
-            <p class="case-subsection-title">Proposed Revisions</p>
-            <p>The seven following revisions were proposed in response to the results of the card sort, as well as the observations made in user analysis.</p>
-            <ol>
-              <li>Single point of entry into collection<br><p>Our analysis so far indicates that a more effective interface would consolidate format types into a single button, providing entry to the museum’s primary content.</p></li>
+          <p class="case-subsection-title">Proposed Revisions</p>
+          <p>The seven following revisions were proposed in response to the results of the card sort, as well as the observations made in user analysis.</p>
+          <ol>
+            <li>Single point of entry into collection<br><p>Our analysis so far indicates that a more effective interface would consolidate format types into a single button, providing entry to the museum’s primary content.</p></li>
 
-              <li>Labelling system overhaul<br><p>Our proposed changes to the global navigation menu are based on card sort analysis that showed a clear distinction between items in the collection versus more general content.</p></li>
+            <li>Labelling system overhaul<br><p>Our proposed changes to the global navigation menu are based on card sort analysis that showed a clear distinction between items in the collection versus more general content.</p></li>
 
-              <li>Collection filter toggles<br><p>By selecting toggles to hide or display certain traits, a user with any level of familiarity can narrow the collection to a more manageable size.</p></li>
+            <li>Collection filter toggles<br><p>By selecting toggles to hide or display certain traits, a user with any level of familiarity can narrow the collection to a more manageable size.</p></li>
 
-              <li>Collection time-range slider<br><p>Separating the temporal metadata from other details is consistent with results from our card sort, in which we observed users distinguishing years from all other cards.</p></li>
+            <li>Collection time-range slider<br><p>Separating the temporal metadata from other details is consistent with results from our card sort, in which we observed users distinguishing years from all other cards.</p></li>
 
-              <li>Homepage curated suggestions<br><p>A sequential, curated journey would provide the context needed to dig deeper into the collection, manifesting as a guided tour of the museum for users without expertise.</p></li>
+            <li>Homepage curated suggestions<br><p>A sequential, curated journey would provide the context needed to dig deeper into the collection, manifesting as a guided tour of the museum for users without expertise.</p></li>
 
-              <li>Search keyword identification<br><p>If a user searches for a keyword that exists as a collection filter, we propose a technical function that would invite users to instead apply that filter to the collection directly.</p></li>
+            <li>Search keyword identification<br><p>If a user searches for a keyword that exists as a collection filter, we propose a technical function that would invite users to instead apply that filter to the collection directly.</p></li>
 
-              <li>Content suggestion mechanism<br><p>This mechanism will benefit those seeking to identify an item if their search isn’t perfectly accurate, drawing from users’ anecdotes about how similar many formats can seem. </p></li>
-            </ol>
+            <li>Content suggestion mechanism<br><p>This mechanism will benefit those seeking to identify an item if their search isn’t perfectly accurate, drawing from users’ anecdotes about how similar many formats can seem. </p></li>
+          </ol>
 
-            <div class="py-3"></div>
-            <p class="case-subsection-title">New IA Schematic</p>
+          <div class="py-3"></div>
+          <p class="case-subsection-title">New IA Schematic</p>
 
-            <p>Applying these proposed revisions and user observations, we ideated on a new IA schematic.</p>
+          <p>Applying these proposed revisions and user observations, we ideated on a new IA schematic.</p>
 
-            <div class="py-2"></div>
-            <a href="./images/obmedia/newIA.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/newIA.jpg" class="img-fluid zoomer" alt="proposed IA image">
-            </a>
-            <div class="py-4"></div>
+          <div class="py-2"></div>
+          <a href="./images/obmedia/newIA.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/newIA.jpg" class="img-fluid zoomer" alt="proposed IA image">
+          </a>
+          <div class="py-4"></div>
 
-          </div>
         </div>
       </div>
 
-      <div class="case-section">
+      <div class="case-section" id="prototyping">
         <div class="case-section-intro">
           <h3 class="case-section-title">Designing the Solution</h3>
+          <div class="thinline"></div>
           <p class="case-section-desc">In order to visualize the proposed revisions and interactions with the new IA schematic, we created wireframe sketches to facilitate agile evaluation. We also developed a clickable wireframe to illustrate and analyse potential storyboards that were unique to each user type.</p>
-          <div class="py-3"></div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-lg-1">
-            <div class="case-section-side hide">
-              <h6 class="case-side-text">Prototyping</h6>
-            </div>
-          </div>
-          <div class="vline"></div>
-          <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
+        <div class="case-section-content">
 
-            <p class="case-subsection-title">Wireframe Sketches</p>
-            <p>According to the new IA schematic and the revisions proposed, we sketched different screens to get a better understanding of a potential interface that would accomodate our changes.</p>
-            <a href="./images/obmedia/sketches.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/sketches.jpg" class="img-fluid case-img zoomer" alt="lo-fi sketches image">
-            </a>
-            <p>These sketches allowed us to communicate the differences in IA to potential users and stakeholders while gathering evaluative feedback in an agile way.</p>
-            <div class="py-3"></div>
+          <p class="case-subsection-title">Wireframe Sketches</p>
+          <p>According to the new IA schematic and the revisions proposed, we sketched different screens to get a better understanding of a potential interface that would accomodate our changes.</p>
+          <a href="./images/obmedia/sketches.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/sketches.jpg" class="img-fluid case-img zoomer" alt="lo-fi sketches image">
+          </a>
+          <p>These sketches allowed us to communicate the differences in IA to potential users and stakeholders while gathering evaluative feedback in an agile way.</p>
+          <div class="py-3"></div>
 
-            <p class="case-subsection-title">Lean Evaluation</p>
-            <p>We showed our sketched wireframes to the participants of the user analysis as they had prior experience of the web museum, explaining the changes that we made and what they would need to do in order to complete certain tasks. We took note of the tasks they were interested in.</p>
-            <p class="">We were also happy to find that participants unanimously felt that the infrastructure was accomodating for their demographic, even though their levels of expertise varied.</p>
-            <p>Overall, users rated the wireframe highly on all seven facets of <a href="https://www.usability.gov/what-and-why/user-experience.html" target="_blank">Peter Morville's honeycomb of UX</a>, especially in terms of findability.</p>
+          <p class="case-subsection-title">Lean Evaluation</p>
+          <p>We showed our sketched wireframes to the participants of the user analysis as they had prior experience of the web museum, explaining the changes that we made and what they would need to do in order to complete certain tasks. We took note of the tasks they were interested in.</p>
+          <p class="">We were also happy to find that participants unanimously felt that the infrastructure was accomodating for their demographic, even though their levels of expertise varied.</p>
+          <p>Overall, users rated the wireframe highly on all seven facets of <a href="https://www.usability.gov/what-and-why/user-experience.html" target="_blank">Peter Morville's honeycomb of UX</a>, especially in terms of findability.</p>
 
-            <div class="py-3"></div>
+          <div class="py-3"></div>
 
-            <p class="case-subsection-title">Clickable Scenarios</p>
-            <p>Moving forward, we brainstormed unique scenarios that would be characteristic of each of our proto-personas based on lean research, and developed a clickable prototype in Balsamiq.</p>
-            <a href="./images/obmedia/scen1.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/scen1.jpg" class="img-fluid case-img zoomer" alt="scenario 1 image">
-            </a>
-            <p>Stanley (the student) wants to explore the museum by viewing whatever the curator features. Since he has limited background knowledge, he wants to see content that could generally spark his interest but doesn't know what he's looking for specifically.</p>
-            <div class="py-3"></div>
-            <a href="./images/obmedia/scen2.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/scen2.jpg" class="img-fluid case-img zoomer" alt="scenario 2 image">
-            </a>
-            <p>Eddie (the museum enthusiast) wants to learn more about the museum itself. He finds obsolescent media curation fascinating, and wants to understand how it's done. Being an enthusiast, he'll surely have comments and questions to share with the curator.</p>
-            <div class="py-3"></div>
-            <a href="./images/obmedia/scen3.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/scen3.jpg" class="img-fluid case-img zoomer" alt="scenario 3 image">
-            </a>
-            <p>Debra Turner (the media technician) is wondering why she can't find exact replacements for her company's audio equipment. She can describe the format and the time period it was used, so she checks details regarding its obsolescence. She also wants to know what replaced it in the industry.</p>
-            <div class="py-3"></div>
-            <a href="./images/obmedia/scen4.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/scen4.jpg" class="img-fluid case-img zoomer" alt="scenario 4 image">
-            </a>            
-            <p>Jayce Henrique (the media historian) is somewhat of a curator himself. Seeing the impressive collection of the museum, he wants to contribute his artifacts to a place that can be accessed by the general public. He wants to collaborate with the museum's curator.</p>
-          </div>
+          <p class="case-subsection-title">Clickable Scenarios</p>
+          <p>Moving forward, we brainstormed unique scenarios that would be characteristic of each of our proto-personas based on lean research, and developed a clickable prototype in Balsamiq.</p>
+          <a href="./images/obmedia/scen1.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/scen1.jpg" class="img-fluid case-img zoomer" alt="scenario 1 image">
+          </a>
+          <p>Stanley (the student) wants to explore the museum by viewing whatever the curator features. Since he has limited background knowledge, he wants to see content that could generally spark his interest but doesn't know what he's looking for specifically.</p>
+          <div class="py-3"></div>
+          <a href="./images/obmedia/scen2.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/scen2.jpg" class="img-fluid case-img zoomer" alt="scenario 2 image">
+          </a>
+          <p>Eddie (the museum enthusiast) wants to learn more about the museum itself. He finds obsolescent media curation fascinating, and wants to understand how it's done. Being an enthusiast, he'll surely have comments and questions to share with the curator.</p>
+          <div class="py-3"></div>
+          <a href="./images/obmedia/scen3.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/scen3.jpg" class="img-fluid case-img zoomer" alt="scenario 3 image">
+          </a>
+          <p>Debra Turner (the media technician) is wondering why she can't find exact replacements for her company's audio equipment. She can describe the format and the time period it was used, so she checks details regarding its obsolescence. She also wants to know what replaced it in the industry.</p>
+          <div class="py-3"></div>
+          <a href="./images/obmedia/scen4.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/scen4.jpg" class="img-fluid case-img zoomer" alt="scenario 4 image">
+          </a>            
+          <p>Jayce Henrique (the media historian) is somewhat of a curator himself. Seeing the impressive collection of the museum, he wants to contribute his artifacts to a place that can be accessed by the general public. He wants to collaborate with the museum's curator.</p>
         </div>
       </div>
 
-      <div class="case-section">
+      <div class="case-section" id="evaluation">
         <div class="case-section-intro">
           <h3 class="case-section-title">Verifying the Efficacy</h3>
+          <div class="thinline"></div>
           <p class="case-section-desc">In order to evaluate our revisions, we conducted a tree test and observational studies based on the tasks in the established storyboards. We intentionally kept the wireframes low-fidelity and facilitated observations openly to understand what the users expected to see in each page.</p>
-          <div class="py-3"></div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-1 col-md-1 col-lg-1">
-            <div class="case-section-side hide">
-              <h6 class="case-side-text">Evaluation</h6>
-            </div>
-          </div>
-          <div class="vline"></div>
-          <div class="col-sm-10 col-md-10 col-lg-10 case-section-content">
-            <p class="case-subsection-title">Tree Test and Observations</p>
-            <p>We conducted a tree test with three users per proto-persona to evaluate their ability to conceptually understand the steps needed to complete their respective user scenarios.</p>
-            <p>Using a different set of participants, we also gathered feedback on the clickable prototype. As they attempted to complete each scenario, we answered their general questions regarding the page's content. This open method allowed us to note any information that the user expected to see.</p>
-            <a href="./images/obmedia/tree1.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/tree1.jpg" class="img-fluid case-img zoomer" alt="treemap 1 image">
-            </a>
-            <p>Users enjoyed the featured format page but didn't necessarily feel that specifying the featured format type was necessary or particularly helpful. They just wanted to see a featured artifact, whatever its type may be.</p>
-            <div class="py-3"></div>
-            <a href="./images/obmedia/tree2.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/tree2.jpg" class="img-fluid case-img zoomer" alt="treemap 2 image">
-            </a>
-            <p>Users found it easy to contact the curator. However, there was minor contention as to whether information regarding media preservation should be in the <i>About</i> tab or should be kept separate.</p>
-            <div class="py-3"></div>
-            <a href="./images/obmedia/tree3.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/tree3.jpg" class="img-fluid case-img zoomer" alt="treemap 3 image">
-            </a>
-            <p>All participants agreed that relying on a revised search schematic rather than the current navigation system was a substantial improvement. Users with high levels of expertise gave filter suggestions (e.g. brands).</p>
-            <div class="py-3"></div>
-            <a href="./images/obmedia/tree4.jpg" data-toggle="lightbox">
-              <img src="./images/obmedia/tree4.jpg" class="img-fluid case-img zoomer" alt="treemap 4 image"> 
-            </a>          
-            <p>Some users expected to be able to contact the curator directly in the <i>Wanted</i> page. They also wanted to be able to have the option to send an image of the artifact in case they couldn't describe the format accurately.</p>
-          </div>
+        <div class="case-section-content">
+          <p class="case-subsection-title">Tree Test and Observations</p>
+          <p>We conducted a tree test with three users per proto-persona to evaluate their ability to conceptually understand the steps needed to complete their respective user scenarios.</p>
+          <p>Using a different set of participants, we also gathered feedback on the clickable prototype. As they attempted to complete each scenario, we answered their general questions regarding the page's content. This open method allowed us to note any information that the user expected to see.</p>
+          <a href="./images/obmedia/tree1.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/tree1.jpg" class="img-fluid case-img zoomer" alt="treemap 1 image">
+          </a>
+          <p>Users enjoyed the featured format page but didn't necessarily feel that specifying the featured format type was necessary or particularly helpful. They just wanted to see a featured artifact, whatever its type may be.</p>
+          <div class="py-3"></div>
+          <a href="./images/obmedia/tree2.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/tree2.jpg" class="img-fluid case-img zoomer" alt="treemap 2 image">
+          </a>
+          <p>Users found it easy to contact the curator. However, there was minor contention as to whether information regarding media preservation should be in the <i>About</i> tab or should be kept separate.</p>
+          <div class="py-3"></div>
+          <a href="./images/obmedia/tree3.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/tree3.jpg" class="img-fluid case-img zoomer" alt="treemap 3 image">
+          </a>
+          <p>All participants agreed that relying on a revised search schematic rather than the current navigation system was a substantial improvement. Users with high levels of expertise gave filter suggestions (e.g. brands).</p>
+          <div class="py-3"></div>
+          <a href="./images/obmedia/tree4.jpg" data-toggle="lightbox">
+            <img src="./images/obmedia/tree4.jpg" class="img-fluid case-img zoomer" alt="treemap 4 image"> 
+          </a>          
+          <p>Some users expected to be able to contact the curator directly in the <i>Wanted</i> page. They also wanted to be able to have the option to send an image of the artifact in case they couldn't describe the format accurately.</p>
         </div>
       </div>
-      <div class="case-reflection">
+
+      <div id="iteration"></div>
+
+      <div class="case-reflection" id="reflection">
         <h3 class="case-reflection-title">Reflection</h3>
+        <div class="thinline"></div>
         <p class="">With observations and tree tests, we found evidence to suggest that our proposed revisions made significant improvements to the existing IA structure for users across expertise groups. Along the way, I learned three key things that will extend to my future work:</p>
         <div class="py-2"></div>
         <p class="case-subsection-title">Specify User Groups as Needed</p>
