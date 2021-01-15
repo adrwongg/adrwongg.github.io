@@ -143,7 +143,7 @@ iframe {
 }
 
 .subarrow {
-  width: 4.44444rem;
+  width: 4rem;
   background-image: url(../images/icons/password_submit.svg);
   border: 0;
   text-indent: -9999px;
@@ -174,7 +174,7 @@ iframe {
 
 .lock-icon {
   width: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .highlight {
