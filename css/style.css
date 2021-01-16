@@ -280,6 +280,13 @@ iframe {
   margin-bottom: 20px;
 }
 
+.smallthinline {
+  border-bottom: solid 3px royalblue;
+  width: 75px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 .about-text {
   margin-left: 4rem;
 }
@@ -532,6 +539,47 @@ h6 {
   padding: 0 20px;
 }
 
+.explorations {
+  margin-bottom: 3rem;
+}
+
+.explorations img{
+  cursor: pointer;
+  max-width: 100%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+.explorations img:hover{
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.01);
+}
+
+.explorations small {
+  text-align: left;
+}
+
+.separator {
+  padding-left: 1rem;
+}
+
 .nav-link {
   font-weight: bold;
   font-size: 16px;
@@ -612,6 +660,16 @@ h6 {
 
 .locked .btn{
   margin-bottom: 1.5rem;
+}
+
+.proj-lock {
+  width: 1.1rem;
+  margin-bottom: 0.6rem;
+  margin-right: 1rem;
+}
+
+.lock-title {
+  padding: 0 15px;
 }
 
 .dropdown-menu {
@@ -869,6 +927,14 @@ h6 {
     margin-left: 15px;
   }
 
+  .case-reflection .case-section-title {
+    padding: 0;
+  }
+
+  .case-reflection .thinline {
+    margin-left: 0;
+  }
+
   .mobile {
     display: block !important;
   }
@@ -892,7 +958,7 @@ h6 {
   }
 
   .hero {
-    padding-top: 1rem !important;
+    padding-top: 2rem !important;
     padding-bottom: 1rem !important;
     height: auto;
   }
@@ -998,20 +1064,25 @@ h6 {
 
   .project-card {
     margin-right: 5%;
-    height: 80vh;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    min-height: 70vh;
   }
 
   .project-card-text {
     flex: none;
     max-width: 100%;
     position: static;
-    padding: 0 2rem 1rem 2rem;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
   }
 
   .project-card-cover {
     flex: none;
     max-width: 100%;
+    padding-bottom: 2rem;
   }
+
   .project-card img{
     max-width: 100%;
     height: auto;
@@ -1060,6 +1131,14 @@ h6 {
 
   .message {
     height: 7rem !important;
+  }
+
+  .project-card {
+    margin-bottom: 3rem;
+  }
+
+  .explorations {
+    margin-bottom: 0;
   }
 
   .case {
@@ -1119,10 +1198,6 @@ h6 {
   .case-section-desc {
     padding: 0 15px;
     margin-bottom: 1rem;
-  }
-
-  .case-section-content {
-    padding: 0 30px;
   }
 
   .case-section-content ol li {
