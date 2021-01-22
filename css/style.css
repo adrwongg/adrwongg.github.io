@@ -868,6 +868,9 @@ h6 {
   .tabhide {
     display: none !important;
   }
+  .project-card {
+    height: 60vh;
+  }
 }
 
 @media (max-width: 991px) {
@@ -999,7 +1002,7 @@ h6 {
   }
 
   .hero {
-    padding-top: 2rem !important;
+    padding-top: 1rem !important;
     padding-bottom: 1rem !important;
     height: auto;
   }
@@ -1041,7 +1044,7 @@ h6 {
 
   .navbar-nav {
     height: 100vh;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .navbar-expand-sm .navbar-nav {
@@ -1107,7 +1110,7 @@ h6 {
     margin-right: 5%;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    min-height: 70vh;
+    min-height: 80vh;
   }
 
   .project-card-text {
