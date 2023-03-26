@@ -306,6 +306,10 @@ iframe {
   padding-bottom: 8rem;
 }
 
+.flex-container {
+  display: flex;
+}
+
 .small-text {
   color: #858585;
   font-size: 14px;
@@ -428,7 +432,7 @@ h6 {
 .animated-info {
   display: inline-block;
   vertical-align: top;
-  min-width: 900px;
+  min-width: 700px;
   position: relative;
 }
 
@@ -694,7 +698,7 @@ h6 {
   margin-top: 0;
   background-color: #FAFAFA;
   border: none;
-  padding-top: 10px;
+  padding: 20px 0;
   box-shadow: 0px 7px 10px rgb(0 0 0 / 10%)
 }
 
@@ -710,6 +714,13 @@ h6 {
 
 .dropdown-item:hover{
   color: black;
+}
+
+.dropdown-title {
+  padding-left: 1.25rem;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: 1000;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -796,6 +807,11 @@ h6 {
   padding-right: 2rem;
 }
 
+.navline {
+  border-right: 1px solid #e0e0e0;
+  margin: 5px 10px 5px 5px;
+}
+
 .grayline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin: 30px 0;
@@ -847,7 +863,7 @@ h6 {
     font-size: 4rem !important;
   }
   .animated-info {
-    min-width: 800px;
+    min-width: 700px;
   }
   .case-title {
     padding: 3rem 0 0 0;
@@ -885,7 +901,7 @@ h6 {
     font-size: 3rem !important;
   }
   .animated-info {
-    min-width: 600px;
+    min-width: 500px;
   }
   .custom-btn {
     margin-right: 1rem;
@@ -1037,6 +1053,8 @@ h6 {
 
   .navbar-expand-sm .navbar-collapse {
     display: block !important;
+    height:100%;
+    overflow-y: auto;
   }
 
   .navbar-nav {
@@ -1283,7 +1301,7 @@ h6 {
 }
 
 /*----------------------------------------------------- Mobile ---------------------------------------------------------*/
-@media (max-width: 580px) {
+@media (max-width: 570px) {
   .hide {
     display: none !important;
   }
@@ -1293,7 +1311,6 @@ h6 {
   .process-icon {
     width: 30%;
   }
-
 	.animated-info {
 		min-width: 200px;
 	}
