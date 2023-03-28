@@ -276,6 +276,12 @@ iframe {
   padding: 3rem 0;
 }
 
+.comp-logo {
+  width: 30%;
+  min-width: 100px;
+  margin-bottom: 20px;
+}
+
 .line {
   border-bottom: solid 5px royalblue;
   width: 100px;
