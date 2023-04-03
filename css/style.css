@@ -168,6 +168,28 @@ iframe {
   letter-spacing: 0.75px;
 }
 
+.post-input {
+  height: 2.77778rem;
+  font-size: 14px;
+  border: 0;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  text-indent: .83333rem;
+  border-radius: 2px;
+  letter-spacing: 0.75px;
+}
+
+textarea {
+  min-height: 7rem !important;
+  font-size: 14px;
+  border: 0;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  letter-spacing: 0.75px;
+  padding: .83333rem;
+}
+
 ::placeholder {
   color: #B3B3B3;
 }
@@ -579,6 +601,32 @@ h6 {
 
 .contact-icons {
    margin-left: 15px;
+}
+
+.contact {
+  width: 50%;
+  margin: 8vh auto 4vh auto;
+}
+
+.contact-form {
+  margin-top: 2rem;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.name-field {
+  width: 90%;
+  margin-right: 1rem;
+}
+
+.contact-submit {
+  margin-top: 1rem;
+}
+
+.email-field {
+  margin-left: 1rem;
 }
 
 .explorations img{
@@ -1014,7 +1062,6 @@ h6 {
   .dotlist li {
     margin-bottom: 12px;
   }
-
 
   .navbar-brand {
     font-weight: bold;

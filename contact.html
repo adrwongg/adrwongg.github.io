@@ -1,10 +1,10 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en-CA">
   <head>
     <meta name="referrer" content="origin">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Obsolete Media">
+    <meta name="description" content="About Adrian">
     <meta name="author" content="Adrian Wong">
     <meta name="robots" content="noindex, nofollow" />
 
@@ -12,16 +12,14 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/unicons.css">
-    <link href="css/ekko-lightbox.css" rel="stylesheet">
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="icon" type="image/png" href="./images/logo.png">
   </head>
-  <body>
 
-    <a id="top"></a>
+<body>
 
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
@@ -126,124 +124,71 @@
         </div>
     </nav>
 
-    <!-- CASE -->
-    <section class="case container justify-content-center align-items-center" id="about">
-      <div class="text-center case-title full-screen">
-          <h1 class="display-4"><strong>Message Centre</strong></h1>
-          <p class="case-desc">Empowering customers to stay informed about their account, wherever and whenever.</p>
-          <div class="py-2 hide"></div>
-          <div class="line mx-auto"></div>
+    <!-- Contact -->
+    <section class="container justify-content-center">
+
+      <!-- still need to qualcheck fields and prevent redirect (iFrame)? and responsive -->
+
+      <div class="contact">
+        <h2 class="">Let's get in touch!</h2>
+        <p>If you have any questions or just wanna chat about design, feel free to reach me below!</p>
+
+        <div class="contact-form">
+          
+          <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/moqzkkrn" method="post">
+            <fieldset id="fs-frm-inputs">
+              <div class="flex-container">
+                <div class="form-group name-field">
+                  <div class="d-flex flex-column">
+                    <label for="full-name" class="copyright-text">Name</label>
+                    <input type="text" name="name" id="full-name" class="post-input" placeholder="" required="">
+                  </div>
+                </div>
+                <div class="form-group email-field">
+                  <div class="d-flex flex-column">
+                    <label for="email-address" class="copyright-text">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" class="post-input" placeholder="" required="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="d-flex flex-column">
+                  <label for="subject" class="copyright-text">Subject</label>
+                  <input name="subject" name="_subject" id="email-subject" class="post-input"/>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="d-flex flex-column">
+                  <label for="message" class="copyright-text">Message</label>
+                  <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
+                </div>
+              </div>
+
+            </fieldset>
+            <input type="submit" value="Submit" class="btn mr-lg-3 custom-btn custom-btn-bg custom-btn-link contact-submit">
+          </form>
+
+        </div>
+
       </div>
 
-      <img src="./images/mmc/paperclutter.jpg" class="img-fluid case-hero" alt="capital one hero image">
-
-      <div class="row justify-content-between align-items-center">
-        <div class="col-sm-5 col-md-5 col-lg-5 case-brief">
-          <h3 class="mb-3">Case Overview</h3>
-          <p class="">Following our mobile-first strategy, we discovered that there was an opportunity to keep customers informed on the mobile app.</p>
-          <p class="">After a collaborative design sprint, we conducted usability tests to determine which of two designs users found  to be more intuitive.</p>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-6 case-meta">
-          <div class="row case-meta-row justify-content-end">
-            <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
-              <p class="case-meta-title">Project Duration</p>
-              <p>4 weeks <br>(Jun - July 2022)</p>
-            </div>
-            <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
-              <p class="case-meta-title">Team Size</p>
-              <p>Research team of 2<br> (including me)</p>
-            </div>
-          </div>
-          <a id="beginning"></a>
-          <div class="row case-meta-row justify-content-end">
-            <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
-              <p class="case-meta-title">My Responsibilities</p>
-              <p>Sprint Facilitation, Prototyping, Usability Testing, Synthesis</p>
-            </div>
-            <div class="col-sm-5 col-md-5 col-lg-5 case-meta-column">
-              <p class="case-meta-title">Tools Used</p>
-              <p>Google Slides, Jamboard, LucidSpark, Figma, UserZoom</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="text-center locked">
-        <div class="input-fields">
-          <img src="./images/icons/lock.svg" class="img-fluid lock-icon" alt="svg image">
-          <p class="locked-desc"><i>For access to password protected projects, please email <a href="mailto:adrwong.ux@gmail.com" target="_blank">adrwong.ux@gmail.com</a></i></p>
-          <input id="password" name="post_password" class="post-password-input" type="password" size="20" maxlength="20" placeholder="Enter password">
-          <input id="loginbutton" class="subarrow" type="submit" name="Submit" value="Submit"> 
-        </div>
-        <div class="py-4"></div>
-      </div>
     </section>
 
+    
+    
     <!-- FOOTER -->
      <footer class="footer">
           <div class="container">
-              <div class="row justify-content-between next-buttons">
-                <a href="./mobilevision.html"><i class='uil uil-arrow-left'></i> Previous Project</a>
-                <a href="./researchcourses.html">Next Project <i class='uil uil-arrow-right'></i></a>
-              </div>
-              <div class="col-lg-12 col-12 text-center">
-                <p class="copyright-text">Made with <span class="uil uil-heart"></span> and <span class="uil uil-code"></span> by Adrian Wong &copy; 2023.
-                  <br><a href="#top">Back to the top.</a>
-                </p>
+              <div class="row">
+                  <div class="col-lg-12 col-12 text-center">
+                      <p class="copyright-text">Made with <span class="uil uil-heart"></span> and <span class="uil uil-code"></span> by Adrian Wong &copy; 2023.
+                        <br><a href="#top">Back to the top.</a>
+                      </p>
+                  </div>
               </div>
           </div>
      </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/ekko-lightbox.min.js"></script>
-    <script src="js/Headroom.js"></script>
-    <script src="js/jQuery.headroom.js"></script>
-    <script src="js/custom.js"></script>
-    <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
-
-    <script type="text/javascript">
-    "use strict";
-
-
-    function loadPage(pwd) {
-
-      var hash= pwd;
-      hash= Sha1.hash(pwd);
-      var url= hash + "/messagecentre-full.html";
-
-      $.ajax({
-        url : url,
-        dataType : "html",
-        success : function(data) {
-
-          window.location= url;
-
-        },
-        error : function(xhr, ajaxOptions, thrownError) {
-
-
-          parent.location.hash= hash;
-
-          //$("#wrongPassword").show();
-          $("#password").attr("placeholder","Incorrect Password");
-          $("#password").val("");
-        }
-      });
-    }
-
-
-    $("#loginbutton").on("click", function() {
-      loadPage($("#password").val());
-    });
-    $("#password").keypress(function(e) {
-      if (e.which == 13) {
-
-        loadPage($("#password").val());
-      }
-    });
-    $("#password").focus();
-
-    </script>
-
-
   </body>
 </html>
