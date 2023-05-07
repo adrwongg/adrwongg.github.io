@@ -251,6 +251,10 @@ textarea {
   margin: 1rem 0 2rem 0;
 }
 
+.process-card {
+  text-align: center;
+}
+
 .project-card {
   background-color: #ffffff;
   -webkit-transition: all 200ms ease-in;
@@ -1010,10 +1014,6 @@ h6 {
   .case-intro-img {
     padding: 0 10rem;
   }
-
-  .tabhide {
-    display: none !important;
-  }
 }
 
 /*------------------------------------------------ Mobile/Tablet ----------------------------------------------------*/
@@ -1252,7 +1252,9 @@ h6 {
   }
 
   .process-card {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 15px;
+    text-align: left;
   }
 
   .message {
