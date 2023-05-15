@@ -434,7 +434,7 @@ h3 {
 h3,
 h4,
 b, strong {
-  font-weight: bold;
+  font-weight: 1000;
   color: black;
 }
 
