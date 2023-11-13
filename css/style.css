@@ -1421,7 +1421,14 @@ h6 {
   .subarrow {
     margin-right: 2rem;
   }
+  .project-card {
+    height: 83vh;
+  }
+  .name { 
+    font-size:2.8rem; 
+  }
 }
+
 @media (max-width: 320px) {
   .animated-text {
     margin-top: 0;
